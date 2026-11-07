@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHZONE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Frontend/Css/Components/Navigation.css">
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+    </script>
+</head>
+<body>
+    
+<nav class="navigation">
+    <a href="#" onclick="moveHome();return false;" class="navigation-item active">
+        <i data-lucide="home" class="navigation-icon"></i>
+        <span class="navigation-label">Home</span>
+    </a>
+
+    <a href="#" onclick="moveLaptop();return false;" class="navigation-item">
+        <i data-lucide="laptop" class="navigation-icon"></i>
+        <span class="navigation-label">Laptops</span>
+    </a>
+
+    <a href="#" onclick="moveSmartphone();return false;" class="navigation-item">
+        <i data-lucide="smartphone" class="navigation-icon"></i>
+        <span class="navigation-label">Smartphones</span>
+    </a>
+
+    <a href="#" onclick="moveAIAssistant();return false;" class="navigation-item">
+        <i data-lucide="sparkles" class="navigation-icon"></i>
+        <span class="navigation-label">AI Assistant</span>
+    </a>
+
+    <div class="navigation-support">
+        <span>Need help? Contact our support team</span>
+    </div>
+</nav>
+
+</body>
+</html>

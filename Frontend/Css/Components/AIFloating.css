@@ -1,0 +1,61 @@
+
+/* ==============================
+   PERSISTENT AI ASSISTANT
+============================== */
+
+.ai-assistant {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+
+    width: 169px;
+    height: 48px;
+
+    padding: 0 18px;
+    gap: 9px;
+
+    background: #2878D0;
+
+    box-shadow: 0px 8px 28px rgba(29, 78, 132, 0.12549);
+
+    border-radius: 100px;
+
+    z-index: 5;
+
+    cursor: pointer;
+}
+
+/* AI Icon */
+
+.ai-assistant-icon {
+    width: 18px;
+    height: 18px;
+
+    color: #FFFFFF;
+    stroke-width: 1.7;
+
+    flex-shrink: 0;
+}
+
+/* AI Label */
+
+.ai-assistant-label {
+    width: 106px;
+    height: 18px;
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #FFFFFF;
+
+    white-space: nowrap;
+}
