@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Điện thoại | CTTSHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/smartphone.css" />
+</head>
+<body>
+
+  <!-- Thanh thông báo -->
+  <div class="topbar">Miễn phí vận chuyển đơn từ 2 triệu &middot; Đổi trả trong 30 ngày &middot; Hàng chính hãng</div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__main">
+      <a href="../index.html" class="logo">
+        <span class="logo__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        </span>
+        CTTSHOP
+      </a>
+
+      <form class="search" onsubmit="return false;">
+        <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="text" id="searchInput" placeholder="Tìm laptop, điện thoại và nhiều hơn nữa..." />
+        <kbd>⌘ K</kbd>
+      </form>
+
+      <div class="header__actions">
+        <a href="Register.html" class="icon-btn" aria-label="Tài khoản">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </a>
+        <a href="#" class="icon-btn" aria-label="Yêu thích">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </a>
+        <a href="#" class="icon-btn cart" aria-label="Giỏ hàng">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart__badge" id="cartCount">0</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="container nav">
+      <ul class="nav__list">
+        <li><a href="../index.html">Trang chủ</a></li>
+        <li><a href="#">Laptop</a></li>
+        <li><a href="smartphone.html" class="active">Điện thoại</a></li>
+        <li>
+          <a href="#" class="nav__ai">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
+            Trợ lý AI
+          </a>
+        </li>
+      </ul>
+      <span class="nav__note">Tư vấn chuyên gia. Không áp lực.</span>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb"><a href="../index.html">Trang chủ</a> / <span>Điện thoại</span></div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <p class="hero__eyebrow">THẾ GIỚI CỦA BẠN, TRONG TẦM TAY.</p>
+      <h1 class="hero__title">Kết nối thông minh hơn.</h1>
+      <p class="hero__desc">Camera xuất sắc. Hiệu năng mượt mà. Khám phá chiếc điện thoại tiếp theo của bạn.</p>
+    </section>
+
+    <!-- Banner AI -->
+    <section class="ai-banner">
+      <div class="ai-banner__left">
+        <span class="ai-banner__icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
+        </span>
+        <div>
+          <h3>Chưa biết bắt đầu từ đâu?</h3>
+          <p>Hãy cho trợ lý AI biết nhu cầu của bạn. Chúng tôi sẽ tìm ra lựa chọn phù hợp nhất.</p>
+        </div>
+      </div>
+      <button class="btn btn--white">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        Giúp tôi chọn
+      </button>
+    </section>
+
+    <!-- Bố cục cửa hàng -->
+    <div class="shop">
+
+      <!-- Bộ lọc -->
+      <aside class="filters">
+        <div class="filters__head">
+          <h2>Bộ lọc</h2>
+          <a href="#" class="link-sm" id="resetAll">Đặt lại</a>
+        </div>
+
+        <div class="filter-group" data-group="brand">
+          <button type="button" class="filter-group__title">Hãng <span class="chev"></span></button>
+          <div class="filter-body" id="filter-brand"></div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-group__title filter-group__title--plain">Khoảng giá</div>
+          <div class="dual-range">
+            <div class="dual-range__track"></div>
+            <div class="dual-range__fill" id="rangeFill"></div>
+            <input type="range" id="rangeMin" />
+            <input type="range" id="rangeMax" />
+          </div>
+          <div class="price-inputs">
+            <input type="text" id="priceMinInput" inputmode="numeric" aria-label="Giá thấp nhất" />
+            <span class="dash"></span>
+            <input type="text" id="priceMaxInput" inputmode="numeric" aria-label="Giá cao nhất" />
+          </div>
+        </div>
+
+        <div class="filter-group" data-group="storage">
+          <button type="button" class="filter-group__title">Bộ nhớ trong <span class="chev"></span></button>
+          <div class="filter-body" id="filter-storage"></div>
+        </div>
+
+        <div class="filter-group" data-group="os">
+          <button type="button" class="filter-group__title">Hệ điều hành <span class="chev"></span></button>
+          <div class="filter-body" id="filter-os"></div>
+        </div>
+
+        <div class="filter-group" data-group="availability">
+          <button type="button" class="filter-group__title">Tình trạng <span class="chev"></span></button>
+          <div class="filter-body" id="filter-availability"></div>
+        </div>
+      </aside>
+
+      <!-- Sản phẩm -->
+      <section class="products">
+        <div class="products__toolbar">
+          <span class="muted" id="resultCount"></span>
+          <label class="sort-btn">
+            <span>Sắp xếp:</span>
+            <select id="sortSelect">
+              <option value="featured">Nổi bật</option>
+              <option value="price-asc">Giá tăng dần</option>
+              <option value="price-desc">Giá giảm dần</option>
+              <option value="rating">Đánh giá cao</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="chips" id="chips"></div>
+
+        <div class="grid" id="productGrid"></div>
+
+        <nav class="pagination" id="pagination" aria-label="Phân trang"></nav>
+        <p class="pagination__info" id="pageInfo"></p>
+      </section>
+    </div>
+
+    <!-- Cẩm nang mua hàng -->
+    <section class="guide">
+      <h2>Chiếc điện thoại phù hợp bắt đầu từ bạn.</h2>
+      <p>Thích chụp ảnh? Hãy ưu tiên chất lượng camera. Luôn di chuyển? Chọn máy có pin dùng cả ngày và sạc nhanh. Cần nhiều chỗ lưu trữ? Chọn từ 256GB trở lên.</p>
+      <a href="#">Khám phá cẩm nang chọn mua điện thoại →</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 CTTSHOP · Công nghệ được chọn lọc kỹ lưỡng.</span>
+      <ul>
+        <li><a href="#">Trợ giúp</a></li>
+        <li><a href="#">Vận chuyển &amp; đổi trả</a></li>
+        <li><a href="#">Quyền riêng tư</a></li>
+        <li><a href="#">Điều khoản</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Nút AI nổi -->
+  <button class="ask-ai">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
+    Hỏi CTTSHOP AI
+  </button>
+
+  <script src="../Js/Pages/smartphone.js"></script>
+</body>
+</html>
