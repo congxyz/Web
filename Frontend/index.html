@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHZONE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Home/MainHeader.css">
+  <link rel="stylesheet" href="Css/Home/HomeIntroduction.css">
+  <link rel="stylesheet" href="Css/Home/FeaturedMerchandising.css">
+  <link rel="stylesheet" href="Css/Home/HomeInspiration.css">
+  <link rel="stylesheet" href="Css/Home/Footer.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script  src="/Frontend/Js/Components/Navigation.js"></script>
+  <script src="Js/Components/Components.js" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Promise.all([
+                loadComponent(
+                    "#navigation",
+                    "Pages/Components/Navigation.html"
+                ),
+                loadComponent(
+                    "#aifloating",
+                    "Pages/Components/AIFloating.html"
+                )
+            ]);
+        });
+    </script>
+</head>
+<body>
+  <header>
+    <section class="main-header"> 
+        <div class="brand">
+        <div class="brand-mark">
+            <i data-lucide="zap"></i>
+        </div>
+        <span class="brand-name">TECHZONE</span>
+    </div>
+
+    <div class="search-box">
+        <i data-lucide="search"></i>
+        <input type="text" placeholder="Search laptops, smartphones and more...">
+        <span class="search-shortcut">⌘ K</span>
+    </div>
+
+    <div class="customer-actions">
+        <button class="action-btn">
+            <i data-lucide="user-round"></i>
+        </button>
+
+        <button class="action-btn">
+            <i data-lucide="heart"></i>
+        </button>
+
+        <button class="cart-action">
+            <i data-lucide="shopping-bag"></i>
+            <span class="cart-count">2</span>
+        </button>
+    </div>
+    </section>
+    <div id="navigation"> </div>
+    <div id="aifloating"> </div>
+</header>
+
+<main>
+  
+<section class="home-introduction">
+    <section class="hero-campaign">
+        <div class="campaign-panel">
+            <div class="campaign-message">
+                <div class="campaign-eyebrow">
+                    <span class="accent"></span>
+                    <span>YOUR NEXT CHAPTER, UPGRADED</span>
+                </div>
+                <h1 class="hero-title">
+                    Great tech.<br>
+                    Greater<br>
+                    possibilities.
+                </h1>
+                <p class="hero-description">
+                    For your big ideas, everyday moments, and everything in
+                    between. Discover tech that moves you forward.
+                </p>
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">
+                        <span>Explore laptops</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn-secondary">
+                        Shop phones
+                    </a>
+                </div>
+                <p class="campaign-offer">
+                    Meet MacBook Air M4. Now from $1,199.
+                </p>
+            </div>
+
+            <div class="featured-product">
+                <div class="product-photography">
+                    <img
+                        src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1?wid=5120&hei=3280&fmt=webp&qlt=90&.v=YTFkSnBPS2tMZFdhaFNRRkx6VnJZaUd4WmthcldkemtncUgvMzhXenFEVkJtY3lja2FvNzhqZzhFY0x4NDFzYkE0ZWxMVGt3djRUV0FHWk92REs5YjAxSlgrVWMrMzU1OXo2c2JyNjJZTGpEUE90ekhYc3dvRnFSbFQ0NEVuaVQ&traceId=1"
+                        alt="Apple MacBook Air M4"
+                    >
+                </div>
+                <div class="product-highlight">
+                    <i data-lucide="zap"></i>
+                    <span>Supercharged by M4</span>
+                    <span class="highlight-description">
+                        Built for what's next
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shopping-assurances">
+        <div class="assurance-item">
+            <i data-lucide="truck"></i>
+            <div class="assurance-description">
+                <h3>Free delivery</h3>
+                <p>On orders over $99</p>
+            </div>
+        </div>
+        <div class="assurance-item">
+            <i data-lucide="rotate-ccw"></i>
+            <div class="assurance-description">
+                <h3>Try it. Love it.</h3>
+                <p>30-day easy returns</p>
+            </div>
+        </div>
+        <div class="assurance-item">
+            <i data-lucide="shield-check"></i>
+            <div class="assurance-description">
+                <h3>100% genuine</h3>
+                <p>Official brand warranty</p>
+            </div>
+        </div>
+        <div class="assurance-item">
+            <i data-lucide="headphones"></i>
+            <div class="assurance-description">
+                <h3>Real human help</h3>
+                <p>Here when you need us</p>
+            </div>
+        </div>
+    </section>
+    <section class="shop-by-category">
+        <h2 class="section-title">
+            Find your kind of upgrade.
+        </h2>
+        <div class="category-cards">
+            <a href="#" class="category-card">
+                <img
+                    src="https://cdn2.fptshop.com.vn/unsafe/00932461_dell_xps_13_ai_dx13260_01_c97a335ec2.png"
+                    alt="Dell XPS 13 laptop"
+                    class="category-image"
+                >
+                <div class="category-link">
+                    <h3>Laptops</h3>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+                <p>Big ideas. Beautifully portable.</p>
+            </a>
+            <a href="#" class="category-card">
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3OBDpZU44FbvlrG7t6dZ5lOutX7aOVIsLHEtxKvtZI4uI-vEweMmGuTY&s=10"
+                    alt="Samsung Galaxy S25"
+                    class="category-image"
+                >
+                <div class="category-link">
+                    <h3>Smartphones</h3>
+                    <i data-lucide="arrow-up-right"></i>
+                </div>
+                <p>Your world. More connected.</p>
+            </a>
+        </div>
+    </section>
+</section>
+
+<section class="featured-merchandising">
+    <section class="trending-products">
+        <div class="section-heading">
+            <div class="heading">
+                <h2 class="section-title"> Good choices. Great favorites. </h2>
+                <span class="section-label"> The upgrades everyone's talking about. </span>
+            </div>
+            <a href="#" class="section-action">
+                <i data-lucide="arrow-right"></i>
+                Shop all bestsellers
+            </a>
+        </div>
+        <div class ="bestseller-grid">
+            <article class="product-card">
+                <div class="merchandising">
+                    <div class = "status">
+                        Bestseller
+                    </div>
+                    <i data-lucide="heart"></i>
+                </div>
+                <img 
+                    src="https://bizweb.dktcdn.net/100/444/581/products/1-ebfc3af4-8545-4ae4-89f7-4b2354b80e51-06e07325-992b-4008-a9b7-19798024721b-cc5abd61-a261-4d42-b42f-b1218567c241.png?v=1767775841483"
+                    alt="MacBook Air 13"
+                    class="product-image"
+                >
+                <h4 class = "product-name">MacBook Air 13"</h4>
+                <p class = "product-specs">M4 · 16GB RAM · 256GB SSD</p>
+                <div class = "product-price">
+                    <span class = "current-price">$1,199</span>
+                    <span class = "old-price">$1,299</span>
+                </div>
+                <button href="#" class = "product-action">
+                    <i data-lucide="plus"></i>
+                    Add to cart
+                </button>
+            </article>
+            <article class="product-card">
+                <div class="merchandising">
+                    <div class = "status">
+                        Bestseller
+                    </div>
+                    <i data-lucide="heart"></i>
+                </div>
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ658Wj2D3bF8fsEAtR8feHvcYbhjOmCtetli2jn8YYbw&s=10"
+                    alt="IPhone 16 Pro"
+                    class="product-image"
+                >
+                <h4 class = "product-name">IPhone 16 Pro</h4>
+                <p class = "product-specs">256GB · Titanium · 6.3"</p>
+                <div class = "product-price">
+                    <span class = "current-price">$999</span>
+                    <span class = "old-price">$1,099</span>
+                </div>
+                <button href="#" class = "product-action">
+                    <i data-lucide="plus"></i>
+                    Add to cart
+                </button>
+            </article>
+            <article class="product-card">
+                <div class="merchandising">
+                    <div class = "status">
+                        OLED Display
+                    </div>
+                    <i data-lucide="heart"></i>
+                </div>
+                <img 
+                    src="https://ttcenter.com.vn/uploads/product/s0gzk4at-1343-asus-zenbook-14-oled-q415-2024-core-ultra-5-125h-ram-8gb-ssd-512gb-oled-touch-new.jpg"
+                    alt="Asus Zenbook 14 OLED"
+                    class="product-image"
+                >
+                <h4 class = "product-name">Asus Zenbook 14 OLED</h4>
+                <p class = "product-specs">Core Ultra 5 · 16GB RAM · 512GB SSD</p>
+                <div class = "product-price">
+                    <span class = "current-price">$999</span>
+                    <span class = "old-price">$1,099</span>
+                </div>
+                <button href="#" class = "product-action">
+                    <i data-lucide="plus"></i>
+                    Add to cart
+                </button>
+            </article>
+            <article class="product-card">
+                <div class="merchandising">
+                    <div class = "status">
+                        Galaxy AI
+                    </div>
+                    <i data-lucide="heart"></i>
+                </div>
+                <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZn8pkU6sARjbmYSQdy51aH19GBbyBCVNQncRlMVPDFw&s=10"
+                    alt="Samsung Galaxy S25"
+                    class="product-image"
+                >
+                <h4 class = "product-name">Samsung Galaxy S25</h4>
+                <p class = "product-specs">256GB · Navy Blue · 6.2"</p>
+                <div class = "product-price">
+                    <span class = "current-price">$799</span>
+                </div>
+                <button href="#" class = "product-action">
+                    <i data-lucide="plus"></i>
+                    Add to cart
+                </button>
+            </article>
+        </div>
+    </section>
+    
+    <section class="smartphone-spotlight">
+        <img 
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ658Wj2D3bF8fsEAtR8feHvcYbhjOmCtetli2jn8YYbw&s=10"
+            alt="IPhone 16 Pro"
+            class="spotlight-image" 
+        >
+        <div class="spotlight-copy">
+            <div class="status"> SMALL DEVICE.BIG POSSIBILITIES</div>
+            <h1 class="spotlight-title">A little more Pro.A lot more you</h1>
+            <p class="spotlight-description">Meet IPhone 16 Pro.Brilliant cameras, exceptional performance, and a titanium design that feels just right.</p>
+            <span class="spotlight-price">From $999</span>
+            <button href="#" class="spotlight-action">
+                <i data-lucide="arrow-right"></i>
+                Discover IPhone 16 Pro
+            </button>
+        </div>
+    </section>
+
+    <section class="ai-discovery">
+        <div class="ai-value">
+            <div class="assistant-identity">
+                <i data-lucide="sparkles"></i>
+                <span>MEET YOUR PERSONAL TECH ADVISON</span>
+            </div>
+            <h2>Less searching. More "that's the one."</h2>
+            <p>Tell our AI assistant what matters to you.Get thoughtful recommendations, clear comparisons, and a little confidence in your next choice.</p>
+            <button href="#" class="ai-action">
+                <i data-lucide="sparkles"></i>
+                Find my perfect tech
+            </button>
+        </div>
+        <div class="conversation-preview">
+            <div class="customer-prompt">
+                "A lightweight laptop for designer work, under $1,300"
+            </div>
+            <span class="ai-response">A great match for your creative days.</span>
+            <div class="recommended-match">
+                <img 
+                    src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-size-unselect-202601-gallery-1_FMT_WHH?wid=690&hei=720&fmt=p-jpg&qlt=80&.v=YTFkSnBPS2tMZFdhaFNRRkx6VnJZaUd4WmthcldkemtncUgvMzhXenFEVndhQ3N1TEt4d0ZKdVZUQ3ZrNzhjK3cxNEx1QmdlVkdRQUhOMXl2K3pkY3dBb0pjWml6bllCL0Y5a1RKc2gxZjlFM2V1RWVXTHBHVzUxMVFmU1Z0Y2ZNdFgzTjZuSWt6SW96N2hDL1hWZkxR&traceId=1"
+                    alt="MacBook Air M4"
+                >
+                <div class="match-information">
+                    <h3>MacBook Air M4</h3>
+                    <span>1.24 kg · 16GB RAM · All-day battery</span>
+                    <strong>Why it fits you</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="home-inspiration">
+      <!-- Shop by lifestyle -->
+      <section class="lifestyle-section">
+        <h2 class="section-title">Shop by lifestyle</h2>
+
+        <div class="lifestyle-collections">
+          <article class="lifestyle-story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR1ZmByPRw56Maw9dj0W1qzzuhXlDruel7cGPpnSkPkg&s=10" 
+            alt="Silver laptop on a minimalist designer desk" 
+            class="lifestyle-image">
+            <p class="story-category">CREATIVE WORKSPACE</p>
+            <h3>Make room for your best ideas</h3>
+            <p class="story-description">Find the technology that brings your creativity to life.</p>
+          </article>
+
+          <article class="lifestyle-story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9kHCKSktYO8bfcwTtIfqSI7SPyHfwcBcAxmO8vXtgZw&s=10" 
+            alt="Laptop and espresso on a bright cafe table" 
+            class="lifestyle-image">
+            <p class="story-category">WORK FROM ANYWHERE</p>
+            <h3>Productivity that goes with you</h3>
+            <p class="story-description">Stay connected and get more done, wherever the day takes you.</p>
+          </article>
+
+          <article class="lifestyle-story">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK-k4N48n6QLmno3iDLfN_JATslsuJmEzlzSfBYzDBRg&s=10" 
+            alt="Person taking a photo with a blue smartphone" class="lifestyle-image">
+            <p class="story-category">CAPTURE EVERY MOMENT</p>
+            <h3>Your everyday, in a new perspective</h3>
+            <p class="story-description">Discover devices made to capture and share life's moments.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Customer stories -->
+      <section class="customer-stories">
+        <div class="review-heading">
+          <h2 class="section-title">Loved by customers</h2>
+          <p class="review-subtitle">Real experiences, real confidence</p>
+        </div>
+
+        <div class="review-cards">
+          <article class="customer-review">
+            <p class="rating" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="review-text">“The shopping experience was simple, and my new laptop is exactly what I needed.”</p>
+            <p class="reviewer">Alex Morgan</p>
+            <p class="review-meta">Verified customer</p>
+          </article>
+
+          <article class="customer-review">
+            <p class="rating" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="review-text">“Great product selection and quick delivery. I’ll definitely shop here again.”</p>
+            <p class="reviewer">Jamie Lee</p>
+            <p class="review-meta">Verified customer</p>
+          </article>
+
+          <article class="customer-review">
+            <p class="rating" aria-label="5 out of 5 stars">★★★★★</p>
+            <p class="review-text">“Helpful support made choosing the right device so much easier.”</p>
+            <p class="reviewer">Taylor Smith</p>
+            <p class="review-meta">Verified customer</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Ownership support -->
+      <section class="ownership-support" aria-label="Customer benefits">
+        <article class="support-benefit">
+          <i data-lucide="package-check" class="benefit-icon" aria-hidden="true"></i>
+          <div class="benefit-description">
+            <h3>Careful and secure delivery</h3>
+            <p>Your order is packed with care and delivered safely to your door.</p>
+          </div>
+        </article>
+
+        <article class="support-benefit">
+          <i data-lucide="refresh-cw" class="benefit-icon" aria-hidden="true"></i>
+          <div class="benefit-description">
+            <h3>Easy returns</h3>
+            <p>Enjoy a straightforward return experience and extra peace of mind.</p>
+          </div>
+        </article>
+
+        <article class="support-benefit">
+          <i data-lucide="messages-square" class="benefit-icon" aria-hidden="true"></i>
+          <div class="benefit-description">
+            <h3>Here when you need us</h3>
+            <p>Our support team is ready to help you find the right solution.</p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter">
+        <div class="newsletter-copy">
+          <h2>Stay in the know</h2>
+          <p>Get the latest tech, product launches and exclusive offers in your inbox.</p>
+        </div>
+
+        <form class="newsletter-signup" action="#" method="post">
+          <div class="email-signup">
+            <label class="visually-hidden" for="newsletter-email">Your email address</label>
+            <input id="newsletter-email" name="email" type="email" placeholder="Enter your email address" required>
+            <button type="submit">Join</button>
+          </div>
+          <p class="newsletter-note">By subscribing, you agree to receive our occasional updates. Unsubscribe anytime.</p>
+        </form>
+      </section>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-navigation">
+      <!-- Brand promise -->
+      <div class="brand-promise">
+        <a href="#" class="footer-brand" aria-label="TECHZONE home">
+          <span class="brand-mark">
+            <i data-lucide="zap" aria-hidden="true"></i>
+          </span>
+          <span class="brand-name">TECHZONE</span>
+        </a>
+
+        <p class="brand-description">
+          Great tech. Greater possibilities. Discover technology that helps you work, create and connect.
+        </p>
+
+        <p class="brand-contact">support@techzone.com</p>
+      </div>
+
+      <!-- Shop links -->
+      <nav class="footer-link-group" aria-label="Shop">
+        <h2>Shop</h2>
+        <a href="#">Laptops & Computers</a>
+        <a href="#">Phones & Tablets</a>
+        <a href="#">Accessories</a>
+      </nav>
+
+      <!-- Customer service links -->
+      <nav class="footer-link-group" aria-label="Customer service">
+        <h2>Customer service</h2>
+        <a href="#">Contact us</a>
+        <a href="#">Shipping & Delivery</a>
+        <a href="#">Returns & Exchanges</a>
+      </nav>
+
+      <!-- About links -->
+      <nav class="footer-link-group" aria-label="About TECHZONE">
+        <h2>About TECHZONE</h2>
+        <a href="#">About us</a>
+        <a href="#">Our stores</a>
+        <a href="#">Careers</a>
+      </nav>
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="legal-information">
+      <p class="copyright">
+        © 2026 TECHZONE. All rights reserved. Product names and trademarks are the property of their respective owners.
+      </p>
+
+      <p class="legal-links">
+        <a href="#">Privacy policy</a>
+        <span aria-hidden="true">·</span>
+        <a href="#">Terms of use</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

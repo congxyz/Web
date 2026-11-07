@@ -1,0 +1,712 @@
+/* =================================
+   HOME INTRODUCTION
+================================= */
+
+.home-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    max-width: 1440px;
+    height: 1096px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    font-family: 'Inter', sans-serif;
+    color: #202938;
+    box-sizing: border-box;
+}
+
+.home-introduction *,
+.home-introduction *::before,
+.home-introduction *::after {
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   HERO CAMPAIGN
+================================= */
+
+.hero-campaign {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 582px;
+
+    padding: 32px 64px 28px;
+}
+
+
+/* Campaign Panel */
+
+.campaign-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    height: 522px;
+
+    padding: 48px;
+    gap: 20px;
+
+    background: #EAF4FF;
+    border-radius: 24px;
+}
+
+
+/* Campaign Message */
+
+.campaign-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 500px;
+    height: 426px;
+
+    padding: 0;
+    gap: 22px;
+
+    flex-shrink: 0;
+}
+
+
+/* Eyebrow */
+
+.campaign-eyebrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 214px;
+    height: 17px;
+
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.accent {
+    width: 20px;
+    height: 2px;
+
+    background: #2878D0;
+    flex-shrink: 0;
+}
+
+.campaign-eyebrow span:last-child {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #2878D0;
+}
+
+
+/* Hero Title */
+
+.hero-title {
+    width: 500px;
+    height: 207px;
+
+    margin: 0;
+
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 108%;
+    letter-spacing: -3px;
+
+    color: #202938;
+    flex-shrink: 0;
+}
+
+
+/* Hero Description */
+
+.hero-description {
+    width: 500px;
+    height: 48px;
+
+    margin: 0;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #64748B;
+    flex-shrink: 0;
+}
+
+
+/* Hero Actions */
+
+.hero-actions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    width: 500px;
+    height: 48px;
+
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+
+/* Primary Button */
+
+.btn-primary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 177px;
+    height: 48px;
+
+    padding: 0 22px;
+    gap: 10px;
+
+    background: #2878D0;
+    border: 1px solid #2878D0;
+    border-radius: 12px;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.btn-primary svg {
+    width: 18px;
+    height: 18px;
+    stroke-width: 1.7;
+}
+
+.btn-primary:hover {
+    background: #1E66B5;
+}
+
+
+/* Secondary Button */
+
+.btn-secondary {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 133px;
+    height: 48px;
+
+    padding: 0 22px;
+    gap: 10px;
+
+    background: #FFFFFF;
+    border: 1px solid #E4EAF1;
+    border-radius: 12px;
+
+    color: #202938;
+    font-size: 14px;
+    font-weight: 600;
+
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.btn-secondary:hover {
+    background: #F8FAFC;
+}
+
+
+/* Campaign Offer */
+
+.campaign-offer {
+    width: 500px;
+    height: 18px;
+
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #64748B;
+    flex-shrink: 0;
+}
+
+
+/* =================================
+   FEATURED PRODUCT
+================================= */
+
+.featured-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 696px;
+    height: 392px;
+
+    gap: 14px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Product Photography */
+
+.product-photography {
+    width: 100%;
+    height: 340px;
+
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.product-photography img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* Product Highlight */
+
+.product-highlight {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 307px;
+    height: 38px;
+
+    padding: 10px 18px;
+    gap: 16px;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.product-highlight svg {
+    width: 17px;
+    height: 17px;
+
+    color: #2878D0;
+    flex-shrink: 0;
+}
+
+.product-highlight span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 150%;
+
+    color: #202938;
+}
+
+.product-highlight .highlight-description {
+    font-size: 11px;
+    font-weight: 400;
+    color: #64748B;
+}
+
+
+/* =================================
+   SHOPPING ASSURANCES
+================================= */
+
+.shopping-assurances {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 86px;
+
+    padding: 10px 64px 36px;
+    gap: 32px;
+}
+
+
+/* Individual Assurance */
+
+.assurance-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 304px;
+    height: 40px;
+
+    gap: 12px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.assurance-item > svg {
+    width: 22px;
+    height: 22px;
+
+    color: #2878D0;
+    stroke-width: 1.7;
+
+    flex-shrink: 0;
+}
+
+
+/* Assurance Description */
+
+.assurance-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 270px;
+    height: 40px;
+
+    gap: 3px;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.assurance-description h3 {
+    width: 100%;
+    height: 20px;
+
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 150%;
+
+    color: #202938;
+}
+
+.assurance-description p {
+    width: 100%;
+    height: 17px;
+
+    margin: 0;
+
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #64748B;
+}
+
+
+/* =================================
+   SHOP BY CATEGORY
+================================= */
+
+.shop-by-category {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 428px;
+
+    padding: 32px 64px;
+    gap: 24px;
+}
+
+
+/* Section Title */
+
+.section-title {
+    width: 100%;
+    height: 45px;
+
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 150%;
+
+    color: #202938;
+}
+
+
+/* Category Cards Container */
+
+.category-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 295px;
+
+    padding: 0;
+    gap: 24px;
+}
+
+
+/* Category Card */
+
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    width: calc((100% - 24px) / 2);
+    height: 295px;
+
+    padding: 24px;
+    gap: 6px;
+
+    background: #F8FAFC;
+    border-radius: 16px;
+
+    text-decoration: none;
+    color: inherit;
+
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* Category Image */
+
+.category-image {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+
+/* Category Link */
+
+.category-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 35px;
+}
+
+.category-link h3 {
+    width: 576px;
+    height: 35px;
+
+    margin: 0;
+
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 150%;
+
+    color: #202938;
+}
+
+.category-link svg {
+    width: 20px;
+    height: 20px;
+
+    color: #2878D0;
+    stroke-width: 1.7;
+
+    flex-shrink: 0;
+}
+
+
+/* Category Description */
+
+.category-card > p {
+    width: 100%;
+    height: 20px;
+
+    margin: 0;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #64748B;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 1024px) {
+
+    .home-introduction {
+        height: auto;
+    }
+
+    .hero-campaign,
+    .shop-by-category {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .campaign-panel {
+        padding: 32px;
+    }
+
+    .campaign-message {
+        width: 45%;
+    }
+
+    .hero-title {
+        width: 100%;
+        font-size: 48px;
+    }
+
+    .hero-description,
+    .campaign-offer {
+        width: 100%;
+    }
+
+    .shopping-assurances {
+        height: auto;
+        padding-left: 32px;
+        padding-right: 32px;
+        gap: 16px;
+    }
+
+    .assurance-description {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-campaign {
+        height: auto;
+    }
+
+    .campaign-panel {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .campaign-message {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-description {
+        height: auto;
+    }
+
+    .hero-actions {
+        height: auto;
+    }
+
+    .campaign-offer {
+        height: auto;
+    }
+
+    .featured-product {
+        width: 100%;
+        height: auto;
+    }
+
+    .product-photography {
+        height: 280px;
+    }
+
+    .shopping-assurances {
+        flex-wrap: wrap;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .assurance-item {
+        flex: 1 1 calc(50% - 16px);
+    }
+
+    .shop-by-category {
+        height: auto;
+    }
+
+    .category-cards {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .category-card {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-campaign,
+    .shop-by-category {
+        padding: 20px 16px;
+    }
+
+    .campaign-panel {
+        padding: 24px;
+        border-radius: 16px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .product-photography {
+        height: 200px;
+    }
+
+    .product-highlight {
+        max-width: 100%;
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .shopping-assurances {
+        padding: 20px 16px;
+    }
+
+    .assurance-item {
+        flex: 1 1 100%;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .category-image {
+        height: 150px;
+    }
+}

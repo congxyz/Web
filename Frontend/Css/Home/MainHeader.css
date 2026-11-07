@@ -1,0 +1,275 @@
+/* =========================
+   MAIN HEADER
+========================= */
+
+.main-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1440px;
+    height: 86px;
+
+    padding: 0 64px;
+    gap: 40px;
+
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    background: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 9px;
+    width: 157px;
+    height: 32px;
+
+    flex-shrink: 0;
+}
+
+.brand-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 30px;
+    height: 30px;
+
+    background: #2878D0;
+    border-radius: 8px;
+
+    flex-shrink: 0;
+}
+
+.brand-mark svg {
+    width: 19px;
+    height: 19px;
+
+    color: #FFFFFF;
+    stroke-width: 1.7;
+}
+
+.brand-name {
+    width: 118px;
+
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 150%;
+
+    color: #202938;
+    white-space: nowrap;
+}
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    height: 44px;
+    padding: 0 16px;
+    gap: 12px;
+
+    flex: 1;
+    min-width: 0;
+
+    background: #F8FAFC;
+    border: 1px solid #E4EAF1;
+    border-radius: 12px;
+}
+
+.search-box > svg {
+    width: 18px;
+    height: 18px;
+
+    color: #64748B;
+    flex-shrink: 0;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+
+    height: 100%;
+
+    border: none;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+
+    color: #202938;
+}
+
+.search-box input::placeholder {
+    color: #64748B;
+}
+
+.search-shortcut {
+    width: 22px;
+
+    font-size: 11px;
+    font-weight: 400;
+
+    color: #64748B;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* =========================
+   CUSTOMER ACTIONS
+========================= */
+
+.customer-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 124px;
+    height: 20px;
+
+    gap: 22px;
+    flex-shrink: 0;
+}
+
+.action-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 20px;
+    height: 20px;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.action-btn svg {
+    width: 20px;
+    height: 20px;
+
+    color: #202938;
+    stroke-width: 1.7;
+}
+
+/* =========================
+   CART ACTION
+========================= */
+
+.cart-action {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    width: 40px;
+    height: 20px;
+
+    gap: 3px;
+
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.cart-action svg {
+    width: 20px;
+    height: 20px;
+
+    color: #202938;
+    stroke-width: 1.7;
+    flex-shrink: 0;
+}
+
+.cart-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 17px;
+    height: 17px;
+
+    background: #2878D0;
+    border-radius: 100px;
+
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 150%;
+
+    color: #FFFFFF;
+}
+
+/* =========================
+   HOVER EFFECTS
+========================= */
+
+.action-btn:hover svg,
+.cart-action:hover svg {
+    color: #2878D0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .main-header {
+        padding: 0 20px;
+        gap: 16px;
+    }
+
+    .brand {
+        width: auto;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .customer-actions {
+        gap: 12px;
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        height: auto;
+        min-height: 76px;
+
+        padding: 12px 16px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .brand {
+        flex: 1;
+    }
+
+    .search-box {
+        order: 3;
+        flex: 0 0 100%;
+    }
+}
