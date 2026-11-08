@@ -17,105 +17,105 @@
     // ---------- Apple ----------
     {
       name: 'iPhone 17', brand: 'Apple', os: 'iOS', tag: 'Phổ biến', storages: ['256GB', '512GB'],
-      spec: '256GB · Tím oải hương · 6,3"', rating: 4.9, reviews: 67593,
+      spec: '256GB · Tím oải hương · 6,3"', rating: 4.9, reviews: 67593, stock: 10,
       listPrice: 28999000, salePrice: 28490000, img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTz6thItN8Ye_Yx3m1eu01q6X8wyFKPqLMtbB4-fPB4FAxj8nUIZ1hQq8kkITpo9hxlB-IGbDOpSgUs4mXZ8qfh9iPW9AWXk8eDfLXjFv1bywN8uyL9RJ8l-hjoKOvembETE5zsCV8&usqp=CAc'
     },
     {
       name: 'iPhone 17 Pro', brand: 'Apple', os: 'iOS', tag: 'Camera Pro', storages: ['256GB', '512GB', '1TB'],
-      spec: '256GB · Cam vũ trụ · 6,3"', rating: 4.9, reviews: 38653,
+      spec: '256GB · Cam vũ trụ · 6,3"', rating: 4.9, reviews: 38653, stock: 5,
       listPrice: 34999000, salePrice: 31990000, img: 'iphone-17-pro.png'
     },
     {
       name: 'iPhone 17 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Màn hình lớn', storages: ['256GB', '512GB', '1TB', '2TB'],
-      spec: '256GB · Cam vũ trụ · 6,9"', rating: 4.9, reviews: 416959,
+      spec: '256GB · Cam vũ trụ · 6,9"', rating: 4.9, reviews: 416959, stock: 3,
       listPrice: 37999000, salePrice: 34990000, img: 'iphone-17-pro-max.png'
     },
     {
       name: 'iPhone Air', brand: 'Apple', os: 'iOS', tag: 'Siêu mỏng', storages: ['256GB', '512GB', '1TB'],
-      spec: '256GB · Trắng mây · 6,5"', rating: 4.9, reviews: 13891,
+      spec: '256GB · Trắng mây · 6,5"', rating: 4.9, reviews: 13891, stock: 8,
       listPrice: 34999000, salePrice: 22990000, img: 'iphone-air.png'
     },
     {
       name: 'iPhone 18 Pro', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
-      spec: '256GB · Băng thanh · 6,3"', rating: 4.9, reviews: 7341,
+      spec: '256GB · Băng thanh · 6,3"', rating: 4.9, reviews: 7341, stock: 5,
       listPrice: 38999000, salePrice: 38990000, img: 'iphone-18-pro.png'
     },
     {
       name: 'iPhone 18 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
-      spec: '256GB · Băng thanh · 6,9"', rating: 5, reviews: 90635,
+      spec: '256GB · Băng thanh · 6,9"', rating: 5, reviews: 90635, stock: 2,
       listPrice: 41999000, salePrice: 41990000, img: 'iphone-18-pro-max.png'
     },
     {
       name: 'iPhone Duo', brand: 'Apple', os: 'iOS', tag: 'Màn hình gập', storages: ['256GB', '512GB', '1TB', '2TB'],
-      spec: '256GB · Trắng sao · Gập', rating: null, reviews: 0,
+      spec: '256GB · Trắng sao · Gập', rating: null, reviews: 0, stock: 1,
       listPrice: 64999000, salePrice: 64990000, img: 'iphone-duo.png'
     },
 
     // ---------- Samsung ----------
     {
       name: 'Samsung Galaxy S26', brand: 'Samsung', os: 'Android', tag: 'Galaxy AI', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 4556,
+      spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 4556, stock: 15,
       listPrice: 29990000, salePrice: 20500000, img: 'galaxy-s26.jpg'
     },
     {
       name: 'Samsung Galaxy S26+', brand: 'Samsung', os: 'Android', tag: 'Galaxy AI', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Tím cobalt', rating: 5, reviews: 5140,
+      spec: '12GB/256GB · Tím cobalt', rating: 5, reviews: 5140, stock: 10,
       listPrice: 33990000, salePrice: 24200000, img: 'galaxy-s26-plus.jpg'
     },
     {
       name: 'Samsung Galaxy S26 Ultra', brand: 'Samsung', os: 'Android', tag: 'Camera Pro', storages: ['256GB', '512GB', '1TB'],
-      spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 27397,
+      spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 27397, stock: 8,
       listPrice: 40990000, salePrice: 30600000, img: 'galaxy-s26-ultra.jpg'
     },
 
     // ---------- Xiaomi ----------
     {
       name: 'Xiaomi 17', brand: 'Xiaomi', os: 'Android', tag: 'Leica', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Xanh lá', rating: 4.9, reviews: 5320,
+      spec: '12GB/256GB · Xanh lá', rating: 4.9, reviews: 5320, stock: 12,
       listPrice: 26990000, salePrice: 18950000, img: 'xiaomi-17.png'
     },
     {
       name: 'Xiaomi 17 Ultra', brand: 'Xiaomi', os: 'Android', tag: 'Camera Leica', storages: ['512GB', '1TB'],
-      spec: '16GB/512GB · Xanh lá', rating: 4.9, reviews: 1567,
+      spec: '16GB/512GB · Xanh lá', rating: 4.9, reviews: 1567, stock: 6,
       listPrice: 39990000, salePrice: 29890000, img: 'xiaomi-17-ultra.png'
     },
 
     // ---------- OPPO ----------
     {
       name: 'OPPO Find X9', brand: 'OPPO', os: 'Android', tag: 'Hasselblad', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Xám titan', rating: null, reviews: 0,
+      spec: '12GB/256GB · Xám titan', rating: null, reviews: 0, stock: 10,
       listPrice: 22990000, salePrice: null, img: 'oppo-find-x9.png'
     },
     {
       name: 'OPPO Find X9 Pro', brand: 'OPPO', os: 'Android', tag: 'Tele 200MP', storages: ['512GB'],
-      spec: '16GB/512GB · Trắng lụa', rating: null, reviews: 0,
+      spec: '16GB/512GB · Trắng lụa', rating: null, reviews: 0, stock: 5,
       listPrice: 32990000, salePrice: null, img: 'oppo-find-x9-pro.png'
     },
     {
       name: 'OPPO Find X9s', brand: 'OPPO', os: 'Android', tag: 'Hasselblad', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Cam nhạt', rating: 5, reviews: 9942,
+      spec: '12GB/256GB · Cam nhạt', rating: 5, reviews: 9942, stock: 8,
       listPrice: 24990000, salePrice: 24990000, img: 'oppo-find-x9s.png'
     },
     {
       name: 'OPPO Find X9 Ultra', brand: 'OPPO', os: 'Android', tag: 'Siêu phẩm camera', storages: ['512GB'],
-      spec: '12GB/512GB · Nâu nhạt', rating: 5, reviews: 387,
+      spec: '12GB/512GB · Nâu nhạt', rating: 5, reviews: 387, stock: 3,
       listPrice: 49990000, salePrice: 49990000, img: 'oppo-find-x9-ultra.png'
     },
 
     // ---------- vivo ----------
     {
       name: 'vivo X300', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['256GB', '512GB'],
-      spec: '12GB/256GB · Hồng phấn', rating: 4.9, reviews: 2141,
+      spec: '12GB/256GB · Hồng phấn', rating: 4.9, reviews: 2141, stock: 10,
       listPrice: 23990000, salePrice: 23990000, img: 'vivo-x300.png'
     },
     {
       name: 'vivo X300 Pro', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['512GB'],
-      spec: '16GB/512GB · Nâu sa mạc', rating: 4.9, reviews: 1457,
+      spec: '16GB/512GB · Nâu sa mạc', rating: 4.9, reviews: 1457, stock: 5,
       listPrice: 34990000, salePrice: 29290000, img: 'vivo-x300-pro.png'
     },
     {
       name: 'vivo X300 Ultra', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['512GB'],
-      spec: '16GB/512GB · Xanh lá', rating: 5, reviews: 403,
+      spec: '16GB/512GB · Xanh lá', rating: 5, reviews: 403, stock: 3,
       listPrice: 49990000, salePrice: 36990000, img: 'vivo-x300-ultra.png'
     }
   ];
@@ -123,7 +123,7 @@
   // Chuẩn hoá dữ liệu: giá bán, giá gốc, giảm giá
   PRODUCTS.forEach(function (p, i) {
     p.order = i;
-    p.inStock = true;
+    p.inStock = p.stock > 0;
     var hasSale = p.salePrice && p.listPrice - p.salePrice >= MIN_SAVING;
     p.price = hasSale ? p.salePrice : p.listPrice;
     p.oldPrice = hasSale ? p.listPrice : null;
@@ -145,7 +145,7 @@
   var state;
   function defaultState() {
     return {
-      brand: [], storage: [], os: [], availability: ['instock'],
+      brand: [], storage: [], os: [], availability: [],
       min: PRICE_MIN, max: PRICE_MAX, sort: 'featured', page: 1, q: ''
     };
   }
@@ -250,7 +250,7 @@
     return '<article class="card">' +
       '<div class="card__top"><span class="badge">' + esc(badge) + '</span>' +
       '<button class="wish" type="button" aria-label="Thêm vào yêu thích">' + heartIcon() + '</button></div>' +
-      '<div class="card__img"><img src="' + p.img + '" alt="' + esc(p.name) + '" loading="lazy" /></div>'
+      '<div class="card__img"><img src="' + p.img + '" alt="' + esc(p.name) + '" loading="lazy" /></div>' +
     '<h3 class="card__name">' + esc(p.name) + '</h3>' +
       '<p class="card__spec">' + esc(p.spec) + '</p>' + rating +
       '<p class="card__price">' + money(p.price) + (p.oldPrice ? ' <del>' + money(p.oldPrice) + '</del>' : '') + '</p>' +

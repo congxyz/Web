@@ -7,56 +7,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../Css/smartphone.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script src="/Frontend/Js/Components/Components.js" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Promise.all([
+                loadComponent(
+                    "#header",
+                    "/Frontend/Pages/Components/Header.html"
+                ),
+                loadComponent(
+                    "#aifloating",
+                    "/Frontend/Pages/Components/AIFloating.html"
+                )
+            ]);
+        });
+    </script>
+    <script src="../Js/Pages/smartphone.js"></script>
 </head>
 <body>
-
-  <!-- Thanh thông báo -->
-  <div class="topbar">Miễn phí vận chuyển đơn từ 2 triệu &middot; Đổi trả trong 30 ngày &middot; Hàng chính hãng</div>
-
   <!-- Header -->
-  <header class="header">
-    <div class="container header__main">
-      <a href="../index.html" class="logo">
-        <span class="logo__icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
-        </span>
-        CTTSHOP
-      </a>
-
-      <form class="search" onsubmit="return false;">
-        <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
-        <input type="text" id="searchInput" placeholder="Tìm laptop, điện thoại và nhiều hơn nữa..." />
-        <kbd>⌘ K</kbd>
-      </form>
-
-      <div class="header__actions">
-        <a href="Register.html" class="icon-btn" aria-label="Tài khoản">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-        </a>
-        <a href="#" class="icon-btn" aria-label="Yêu thích">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>
-        </a>
-        <a href="#" class="icon-btn cart" aria-label="Giỏ hàng">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a3 3 0 0 1 6 0v2"/></svg>
-          <span class="cart__badge" id="cartCount">0</span>
-        </a>
-      </div>
-    </div>
-
-    <nav class="container nav">
-      <ul class="nav__list">
-        <li><a href="../index.html">Trang chủ</a></li>
-        <li><a href="#">Laptop</a></li>
-        <li><a href="smartphone.html" class="active">Điện thoại</a></li>
-        <li>
-          <a href="#" class="nav__ai">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
-            Trợ lý AI
-          </a>
-        </li>
-      </ul>
-      <span class="nav__note">Tư vấn chuyên gia. Không áp lực.</span>
-    </nav>
+  <header>
+    <div id="header"> </div>
+    <div id="aifloating"> </div>
   </header>
 
   <main class="container">
@@ -75,7 +51,7 @@
     <section class="ai-banner">
       <div class="ai-banner__left">
         <span class="ai-banner__icon">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
+          <i data-lucide="sparkles"></i>
         </span>
         <div>
           <h3>Chưa biết bắt đầu từ đâu?</h3>
@@ -83,7 +59,7 @@
         </div>
       </div>
       <button class="btn btn--white">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        <i data-lucide="arrow-right"></i>
         Giúp tôi chọn
       </button>
     </section>
@@ -179,12 +155,6 @@
     </div>
   </footer>
 
-  <!-- Nút AI nổi -->
-  <button class="ask-ai">
-    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 3l1.8 4.7L16.5 9.5l-4.7 1.8L10 16l-1.8-4.7L3.5 9.5l4.7-1.8zM18 13l.9 2.1 2.1.9-2.1.9L18 19l-.9-2.1-2.1-.9 2.1-.9z"/></svg>
-    Hỏi CTTSHOP AI
-  </button>
-
-  <script src="../Js/Pages/smartphone.js"></script>
+  
 </body>
 </html>

@@ -7,7 +7,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Css/Home/MainHeader.css">
   <link rel="stylesheet" href="Css/Home/HomeIntroduction.css">
   <link rel="stylesheet" href="Css/Home/FeaturedMerchandising.css">
   <link rel="stylesheet" href="Css/Home/HomeInspiration.css">
@@ -16,14 +15,14 @@
   <script>
         document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
   </script>
-  <script  src="/Frontend/Js/Components/Navigation.js"></script>
+  <script  src="/Frontend/Js/Components/Header.js"></script>
   <script src="Js/Components/Components.js" defer></script>
   <script>
         document.addEventListener("DOMContentLoaded", () => {
             Promise.all([
                 loadComponent(
-                    "#navigation",
-                    "Pages/Components/Navigation.html"
+                    "#header",
+                    "Pages/Components/Header.html"
                 ),
                 loadComponent(
                     "#aifloating",
@@ -35,36 +34,8 @@
 </head>
 <body>
   <header>
-    <section class="main-header"> 
-        <div class="brand">
-        <div class="brand-mark">
-            <i data-lucide="zap"></i>
-        </div>
-        <span class="brand-name">TECHZONE</span>
-    </div>
-
-    <div class="search-box">
-        <i data-lucide="search"></i>
-        <input type="text" placeholder="Search laptops, smartphones and more...">
-        <span class="search-shortcut">⌘ K</span>
-    </div>
-
-    <div class="customer-actions">
-        <button class="action-btn">
-            <i data-lucide="user-round"></i>
-        </button>
-
-        <button class="action-btn">
-            <i data-lucide="heart"></i>
-        </button>
-
-        <button class="cart-action">
-            <i data-lucide="shopping-bag"></i>
-            <span class="cart-count">2</span>
-        </button>
-    </div>
-    </section>
-    <div id="navigation"> </div>
+    
+    <div id="header"> </div>
     <div id="aifloating"> </div>
 </header>
 
