@@ -1,3 +1,4 @@
+
 /* =========================
    MAIN HEADER
 ========================= */
@@ -272,4 +273,107 @@
         order: 3;
         flex: 0 0 100%;
     }
+}
+/* ==============================
+   NAVIGATION
+============================== */
+
+.navigation {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    width: 1440px;
+    height: 46px;
+
+    margin: 0 auto;
+    padding: 0 64px;
+    gap: 36px;
+
+    border-bottom: 1px solid #E4EAF1;
+}
+
+/* ==============================
+   NAVIGATION ITEM
+============================== */
+
+.navigation-item {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    height: 46px;
+    padding: 0;
+    gap: 6px;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    border-bottom: 2px solid transparent;
+}
+
+/* Active item */
+
+.navigation-item.active {
+    border-bottom-color: #2878D0;
+}
+
+/* ==============================
+   NAVIGATION LABEL
+============================== */
+
+.navigation-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 150%;
+
+    color: #202938;
+}
+
+.navigation-item.active .navigation-label {
+    font-weight: 600;
+    color: #2878D0;
+}
+
+/* ==============================
+   NAVIGATION ICON
+============================== */
+
+.navigation-icon {
+    width: 15px;
+    height: 15px;
+
+    color: #2878D0;
+    stroke-width: 1.7;
+    flex-shrink: 0;
+}
+
+/* ==============================
+   SUPPORT
+============================== */
+
+.navigation-support {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    flex: 1;
+
+    height: 18px;
+}
+
+.navigation-support span {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+
+    color: #64748B;
+    white-space: nowrap;
 }
