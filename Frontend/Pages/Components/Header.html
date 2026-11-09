@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/Frontend/Css/Components/Header.css">
     <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="/Frontend/Js/Components/Header.js" defer></script>
     <script>
             document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
     </script>
@@ -24,7 +25,7 @@
 
     <div class="search-box">
         <i data-lucide="search"></i>
-        <input type="text" placeholder="Search laptops, smartphones and more...">
+        <input type="text" placeholder="Search laptops, smartphones and more..." id="searchInput"  />
         <span class="search-shortcut">⌘ K</span>
     </div>
 
@@ -44,22 +45,22 @@
     </div>
     </section>
 <nav class="navigation">
-    <a href="#" onclick="moveHome();return false;" class="navigation-item active">
+    <a href="/Frontend/index.html" class="navigation-item active">
         <i data-lucide="home" class="navigation-icon"></i>
         <span class="navigation-label">Home</span>
     </a>
 
-    <a href="#" onclick="moveLaptop();return false;" class="navigation-item">
+    <a href="#" class="navigation-item">
         <i data-lucide="laptop" class="navigation-icon"></i>
         <span class="navigation-label">Laptops</span>
     </a>
 
-    <a href="#" onclick="moveSmartphone();return false;" class="navigation-item">
+    <a href="/Frontend/Pages/smartphone.html" class="navigation-item">
         <i data-lucide="smartphone" class="navigation-icon"></i>
         <span class="navigation-label">Smartphones</span>
     </a>
 
-    <a href="#" onclick="moveAIAssistant();return false;" class="navigation-item">
+    <a href="#" class="navigation-item">
         <i data-lucide="sparkles" class="navigation-icon"></i>
         <span class="navigation-label">AI Assistant</span>
     </a>

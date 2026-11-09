@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../Css/smartphone.css" />
   <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="/Frontend/Js/Components/Header.js" defer></script>
   <script>
         document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
   </script>
@@ -23,10 +24,17 @@
                     "#aifloating",
                     "/Frontend/Pages/Components/AIFloating.html"
                 )
-            ]);
+            ]).then(function() {
+            const script = document.createElement("script");
+            script.src = "/Frontend/Js/Pages/smartphone.js";
+            document.body.appendChild(script);
+            const script1 = document.createElement("script");
+            script1.src = "/Frontend/Js/Components/Header.js";
+            document.body.appendChild(script1);
+        })
         });
     </script>
-    <script src="../Js/Pages/smartphone.js"></script>
+    
 </head>
 <body>
   <!-- Header -->

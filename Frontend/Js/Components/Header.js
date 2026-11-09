@@ -1,12 +1,15 @@
-function moveLaptop() {
-    console.log("Moving Laptop");
-}
-function moveHome() {
-    console.log("Moving Home");
-}
-function moveSmartphone() {
-    console.log("Moving Smartphone");
-}
-function moveAIAssistant() {
-    console.log("Moving AIAssistance");
-}
+(function () {
+
+    currentPath = window.location.pathname;
+
+    const items = document.querySelectorAll(".navigation a");
+
+    items.forEach(item => {
+        item.classList.remove("active");
+        const path = item.getAttribute("href");
+        if (currentPath === path) {
+            item.classList.add("active");
+        }
+    });
+
+})();
