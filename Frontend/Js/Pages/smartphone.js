@@ -238,7 +238,7 @@
 
   // ---------- Hiển thị sản phẩm ----------
   function heartIcon() {
-    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></svg>';
+    return '<i datalucide="heart" class="lucide lucide-heart" width="24" height="24" stroke-width="1.5" fill="none" stroke="currentColor"></i>';
   }
 
   function cardHtml(p) {
@@ -428,6 +428,7 @@
     }
     $('priceMinInput').addEventListener('change', onPriceInput);
     $('priceMaxInput').addEventListener('change', onPriceInput);
+    refresh(false);
   }
 
   // ---------- Khởi tạo ----------

@@ -11,12 +11,11 @@
   <link rel="stylesheet" href="Css/Home/FeaturedMerchandising.css">
   <link rel="stylesheet" href="Css/Home/HomeInspiration.css">
   <link rel="stylesheet" href="Css/Home/Footer.css">
+  <script src="/Frontend/Js/Components/Components.js" defer></script>
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <script>
         document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
   </script>
-  <script  src="/Frontend/Js/Components/Header.js"></script>
-  <script src="Js/Components/Components.js" defer></script>
   <script>
         document.addEventListener("DOMContentLoaded", () => {
             Promise.all([
@@ -28,7 +27,11 @@
                     "#aifloating",
                     "Pages/Components/AIFloating.html"
                 )
-            ]);
+            ]).then(function() {
+                const script = document.createElement("script");
+                script.src = "Js/Components/Header.js";
+                document.body.appendChild(script);;
+            })
         });
     </script>
 </head>
