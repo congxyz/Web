@@ -23,100 +23,100 @@
     {
       name: 'iPhone 17 Pro', brand: 'Apple', os: 'iOS', tag: 'Camera Pro', storages: ['256GB', '512GB', '1TB'],
       spec: '256GB · Cam vũ trụ · 6,3"', rating: 4.9, reviews: 38653, stock: 5,
-      listPrice: 34999000, salePrice: 31990000, img: 'iphone-17-pro.png'
+      listPrice: 34999000, salePrice: 31990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-256-gb.png'
     },
     {
       name: 'iPhone 17 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Màn hình lớn', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Cam vũ trụ · 6,9"', rating: 4.9, reviews: 416959, stock: 3,
-      listPrice: 37999000, salePrice: 34990000, img: 'iphone-17-pro-max.png'
+      listPrice: 37999000, salePrice: 34990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-17-pro-max_3.jpg'
     },
     {
       name: 'iPhone Air', brand: 'Apple', os: 'iOS', tag: 'Siêu mỏng', storages: ['256GB', '512GB', '1TB'],
       spec: '256GB · Trắng mây · 6,5"', rating: 4.9, reviews: 13891, stock: 8,
-      listPrice: 34999000, salePrice: 22990000, img: 'iphone-air.png'
+      listPrice: 34999000, salePrice: 22990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone_air-3_2.jpg'
     },
     {
       name: 'iPhone 18 Pro', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Băng thanh · 6,3"', rating: 4.9, reviews: 7341, stock: 5,
-      listPrice: 38999000, salePrice: 38990000, img: 'iphone-18-pro.png'
+      listPrice: 38999000, salePrice: 38990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01.jpg'
     },
     {
       name: 'iPhone 18 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Băng thanh · 6,9"', rating: 5, reviews: 90635, stock: 2,
-      listPrice: 41999000, salePrice: 41990000, img: 'iphone-18-pro-max.png'
+      listPrice: 41999000, salePrice: 41990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-max-01.jpg'
     },
     {
       name: 'iPhone Duo', brand: 'Apple', os: 'iOS', tag: 'Màn hình gập', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Trắng sao · Gập', rating: null, reviews: 0, stock: 1,
-      listPrice: 64999000, salePrice: 64990000, img: 'iphone-duo.png'
+      listPrice: 64999000, salePrice: 64990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-duo-01.jpg'
     },
 
     // ---------- Samsung ----------
     {
       name: 'Samsung Galaxy S26', brand: 'Samsung', os: 'Android', tag: 'Galaxy AI', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 4556, stock: 15,
-      listPrice: 29990000, salePrice: 20500000, img: 'galaxy-s26.jpg'
+      listPrice: 29990000, salePrice: 20500000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s26-1.jpg'
     },
     {
       name: 'Samsung Galaxy S26+', brand: 'Samsung', os: 'Android', tag: 'Galaxy AI', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Tím cobalt', rating: 5, reviews: 5140, stock: 10,
-      listPrice: 33990000, salePrice: 24200000, img: 'galaxy-s26-plus.jpg'
+      listPrice: 33990000, salePrice: 24200000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s26-plus.jpg'
     },
     {
       name: 'Samsung Galaxy S26 Ultra', brand: 'Samsung', os: 'Android', tag: 'Camera Pro', storages: ['256GB', '512GB', '1TB'],
       spec: '12GB/256GB · Tím cobalt', rating: 4.9, reviews: 27397, stock: 8,
-      listPrice: 40990000, salePrice: 30600000, img: 'galaxy-s26-ultra.jpg'
+      listPrice: 40990000, salePrice: 30600000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/s/a/samsung-galaxy-s26-ultra-1.jpg'
     },
 
     // ---------- Xiaomi ----------
     {
       name: 'Xiaomi 17', brand: 'Xiaomi', os: 'Android', tag: 'Leica', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Xanh lá', rating: 4.9, reviews: 5320, stock: 12,
-      listPrice: 26990000, salePrice: 18950000, img: 'xiaomi-17.png'
+      listPrice: 26990000, salePrice: 18950000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-17-5g.jpg'
     },
     {
       name: 'Xiaomi 17 Ultra', brand: 'Xiaomi', os: 'Android', tag: 'Camera Leica', storages: ['512GB', '1TB'],
       spec: '16GB/512GB · Xanh lá', rating: 4.9, reviews: 1567, stock: 6,
-      listPrice: 39990000, salePrice: 29890000, img: 'xiaomi-17-ultra.png'
+      listPrice: 39990000, salePrice: 29890000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-xiaomi-17-ultra-den.jpg'
     },
 
     // ---------- OPPO ----------
     {
       name: 'OPPO Find X9', brand: 'OPPO', os: 'Android', tag: 'Hasselblad', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Xám titan', rating: null, reviews: 0, stock: 10,
-      listPrice: 22990000, salePrice: null, img: 'oppo-find-x9.png'
+      listPrice: 22990000, salePrice: null, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/x/9/x9-1_1.jpg'
     },
     {
       name: 'OPPO Find X9 Pro', brand: 'OPPO', os: 'Android', tag: 'Tele 200MP', storages: ['512GB'],
       spec: '16GB/512GB · Trắng lụa', rating: null, reviews: 0, stock: 5,
-      listPrice: 32990000, salePrice: null, img: 'oppo-find-x9-pro.png'
+      listPrice: 32990000, salePrice: null, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo_find_x9_pro_16gb_512gb-1.jpg'
     },
     {
       name: 'OPPO Find X9s', brand: 'OPPO', os: 'Android', tag: 'Hasselblad', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Cam nhạt', rating: 5, reviews: 9942, stock: 8,
-      listPrice: 24990000, salePrice: 24990000, img: 'oppo-find-x9s.png'
+      listPrice: 24990000, salePrice: 24990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/o/p/oppo-find-x9s-25.jpg'
     },
     {
       name: 'OPPO Find X9 Ultra', brand: 'OPPO', os: 'Android', tag: 'Siêu phẩm camera', storages: ['512GB'],
       spec: '12GB/512GB · Nâu nhạt', rating: 5, reviews: 387, stock: 3,
-      listPrice: 49990000, salePrice: 49990000, img: 'oppo-find-x9-ultra.png'
+      listPrice: 49990000, salePrice: 49990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/d/i/dien-thoai-oppo-find-x9-ultra-cam-8.jpg'
     },
 
     // ---------- vivo ----------
     {
       name: 'vivo X300', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['256GB', '512GB'],
       spec: '12GB/256GB · Hồng phấn', rating: 4.9, reviews: 2141, stock: 10,
-      listPrice: 23990000, salePrice: 23990000, img: 'vivo-x300.png'
+      listPrice: 23990000, salePrice: 23990000, img: 'https://cdn2.cellphones.com.vn/x/media/catalog/product/d/i/dien-thoai-vivo-x300-12gb-256gb-cu-dep.jpg'
     },
     {
       name: 'vivo X300 Pro', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['512GB'],
       spec: '16GB/512GB · Nâu sa mạc', rating: 4.9, reviews: 1457, stock: 5,
-      listPrice: 34990000, salePrice: 29290000, img: 'vivo-x300-pro.png'
+      listPrice: 34990000, salePrice: 29290000, img: 'https://cdn2.cellphones.com.vn/x/media/catalog/product/v/i/vivo-x300-pro-16gb-512gb-cu-dep.jpg'
     },
     {
       name: 'vivo X300 Ultra', brand: 'vivo', os: 'Android', tag: 'ZEISS', storages: ['512GB'],
       spec: '16GB/512GB · Xanh lá', rating: 5, reviews: 403, stock: 3,
-      listPrice: 49990000, salePrice: 36990000, img: 'vivo-x300-ultra.png'
+      listPrice: 49990000, salePrice: 36990000, img: 'https://cdn2.cellphones.com.vn/x/media/catalog/product/d/i/dien-thoai-vivo-x300-ultra-16gb-512gb-cu-dep-2.jpg'
     }
   ];
 
@@ -251,7 +251,7 @@
       '<div class="card__top"><span class="badge">' + esc(badge) + '</span>' +
       '<button class="wish" type="button" aria-label="Thêm vào yêu thích">' + heartIcon() + '</button></div>' +
       '<div class="card__img"><img src="' + p.img + '" alt="' + esc(p.name) + '" loading="lazy" /></div>' +
-    '<h3 class="card__name">' + esc(p.name) + '</h3>' +
+      '<h3 class="card__name">' + esc(p.name) + '</h3>' +
       '<p class="card__spec">' + esc(p.spec) + '</p>' + rating +
       '<p class="card__price">' + money(p.price) + (p.oldPrice ? ' <del>' + money(p.oldPrice) + '</del>' : '') + '</p>' +
       '<button class="btn btn--primary btn--block" type="button" data-add><span class="plus">+</span> Thêm vào giỏ</button>' +

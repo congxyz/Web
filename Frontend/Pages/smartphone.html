@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,32 +11,33 @@
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="/Frontend/Js/Components/Header.js" defer></script>
   <script>
-        document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+    document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
   </script>
   <script src="/Frontend/Js/Components/Components.js" defer></script>
   <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            Promise.all([
-                loadComponent(
-                    "#header",
-                    "/Frontend/Pages/Components/Header.html"
-                ),
-                loadComponent(
-                    "#aifloating",
-                    "/Frontend/Pages/Components/AIFloating.html"
-                )
-            ]).then(function() {
-            const script = document.createElement("script");
-            script.src = "/Frontend/Js/Pages/smartphone.js";
-            document.body.appendChild(script);
-            const script1 = document.createElement("script");
-            script1.src = "/Frontend/Js/Components/Header.js";
-            document.body.appendChild(script1);
-        })
-        });
-    </script>
-    
+    document.addEventListener("DOMContentLoaded", () => {
+      Promise.all([
+        loadComponent(
+          "#header",
+          "/Frontend/Pages/Components/Header.html"
+        ),
+        loadComponent(
+          "#aifloating",
+          "/Frontend/Pages/Components/AIFloating.html"
+        )
+      ]).then(function () {
+        const script = document.createElement("script");
+        script.src = "/Frontend/Js/Pages/smartphone.js";
+        document.body.appendChild(script);
+        const script1 = document.createElement("script");
+        script1.src = "/Frontend/Js/Components/Header.js";
+        document.body.appendChild(script1);
+      })
+    });
+  </script>
+
 </head>
+
 <body>
   <!-- Header -->
   <header>
@@ -145,7 +147,8 @@
     <!-- Cẩm nang mua hàng -->
     <section class="guide">
       <h2>Chiếc điện thoại phù hợp bắt đầu từ bạn.</h2>
-      <p>Thích chụp ảnh? Hãy ưu tiên chất lượng camera. Luôn di chuyển? Chọn máy có pin dùng cả ngày và sạc nhanh. Cần nhiều chỗ lưu trữ? Chọn từ 256GB trở lên.</p>
+      <p>Thích chụp ảnh? Hãy ưu tiên chất lượng camera. Luôn di chuyển? Chọn máy có pin dùng cả ngày và sạc nhanh. Cần
+        nhiều chỗ lưu trữ? Chọn từ 256GB trở lên.</p>
       <a href="#">Khám phá cẩm nang chọn mua điện thoại →</a>
     </section>
   </main>
@@ -163,6 +166,7 @@
     </div>
   </footer>
 
-  
+
 </body>
+
 </html>
