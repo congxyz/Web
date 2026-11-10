@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop </title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="laptop2.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="/Frontend/Js/Components/Header.js" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script src="/Frontend/Js/Components/Components.js" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Promise.all([
+                loadComponent(
+                    "#header",
+                    "/Frontend/Pages/Components/Header.html"
+                ),
+                loadComponent(
+                    "#aifloating",
+                    "/Frontend/Pages/Components/AIFloating.html"
+                )
+            ]).then(function() {
+            const script = document.createElement("script");
+            script.src = "/Frontend/Js/Pages/laptop.js";
+            document.body.appendChild(script);
+            const script1 = document.createElement("script");
+            script1.src = "/Frontend/Js/Components/Header.js";
+            document.body.appendChild(script1);
+        })
+        });
+    </script>
+    
+  <!-- Bỏ comment dòng dưới khi đã có file CSS -->
+  <!-- <link rel="stylesheet" href="css/laptops.css"> -->
+</head>
+<body>
+ 
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div id="header"> </div>
+    <div id="aifloating"> </div>
+  </header>
+
+  <main class="page">
+
+    <!-- ========== BREADCRUMB ========== -->
+    <div class="breadcrumb"><a href="../index.html">Trang chủ</a> / <span>Laptop</span></div>
+
+
+    <!-- ========== HERO ========== -->
+    <header class="hero">
+      <p class="hero__eyebrow">Nhiều khả năng hơn. Ít thỏa hiệp hơn..</p>
+      <h1 class="hero__title">Tìm laptop hoàn hảo tiếp theo của bạn.</h1>
+      <p class="hero__subtitle">Từ sự xuất sắc trong công việc thường ngày đến sức mạnh sáng tạo. Hãy tìm lựa chọn phù hợp với bạn.</p>
+    </header>
+
+    <!-- ========== AI ADVISOR BANNER ========== -->
+       <section class="ai-banner">
+      <div class="ai-banner__left">
+        <span class="ai-banner__icon">
+          <i data-lucide="sparkles"></i>
+        </span>
+        <div>
+          <h3>Chưa biết bắt đầu từ đâu?</h3>
+          <p>Hãy cho trợ lý AI biết nhu cầu của bạn. Chúng tôi sẽ tìm ra lựa chọn phù hợp nhất.</p>
+        </div>
+      </div>
+      <button class ="btn btn white">
+        <i data-lucide="arrow-right"></i>
+        Giúp tôi chọn
+      </button>
+       </section>
+
+    <!-- ========== NỘI DUNG CHÍNH: FILTER + DANH SÁCH ========== -->
+    <div class="catalog">
+
+      <!-- ---------- SIDEBAR FILTER ---------- -->
+      <aside class="filters" aria-label="Product filters">
+        <form id="filter-form" action="#" method="get">
+
+          <div class="filters__header">
+            <h2 class="filters__title">Filters</h2>
+            <button type="reset" class="filters__reset">Reset all</button>
+          </div>
+
+          <!-- Brand -->
+          <fieldset class="filter-group">
+            <legend class="filter-group__title">Brand</legend>
+            <ul class="filter-group__list">
+              <li>
+                <label><input type="checkbox" name="brand" value="apple"> <span>Apple</span></label>
+                <span class="filter-group__count">12</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="brand" value="dell"> <span>Dell</span></label>
+                <span class="filter-group__count">8</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="brand" value="asus"> <span>ASUS</span></label>
+                <span class="filter-group__count">6</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="brand" value="lenovo"> <span>Lenovo</span></label>
+                <span class="filter-group__count">4</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="brand" value="hp"> <span>HP</span></label>
+                <span class="filter-group__count">7</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="brand" value="samsung"> <span>Samsung</span></label>
+                <span class="filter-group__count">5</span>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Price range -->
+          <fieldset class="filter-group">
+            <legend class="filter-group__title">Price range</legend>
+            <input type="range" id="price-slider" name="price-slider" min="0" max="3000" step="50" value="2000" aria-label="Maximum price">
+            <div class="price-inputs">
+              <label class="visually-hidden" for="price-min">Minimum price</label>
+              <input type="number" id="price-min" name="price-min" placeholder="$500" min="0">
+              <span class="price-inputs__divider" aria-hidden="true">—</span>
+              <label class="visually-hidden" for="price-max">Maximum price</label>
+              <input type="number" id="price-max" name="price-max" placeholder="$2,000" min="0">
+            </div>
+          </fieldset>
+
+          <!-- Memory -->
+          <fieldset class="filter-group">
+            <legend class="filter-group__title">Memory</legend>
+            <ul class="filter-group__list">
+              <li>
+                <label><input type="checkbox" name="memory" value="8gb"> <span>8GB</span></label>
+                <span class="filter-group__count">12</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="memory" value="16gb" checked> <span>16GB</span></label>
+                <span class="filter-group__count">8</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="memory" value="32gb"> <span>32GB</span></label>
+                <span class="filter-group__count">6</span>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Screen size -->
+          <fieldset class="filter-group">
+            <legend class="filter-group__title">Screen size</legend>
+            <ul class="filter-group__list">
+              <li>
+                <label><input type="checkbox" name="screen" value="13-14"> <span>13–14 inch</span></label>
+                <span class="filter-group__count">12</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="screen" value="15-16"> <span>15–16 inch</span></label>
+                <span class="filter-group__count">8</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="screen" value="17+"> <span>17 inch &amp; above</span></label>
+                <span class="filter-group__count">6</span>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Availability -->
+          <fieldset class="filter-group">
+            <legend class="filter-group__title">Availability</legend>
+            <ul class="filter-group__list">
+              <li>
+                <label><input type="checkbox" name="availability" value="in-stock" checked> <span>In stock</span></label>
+                <span class="filter-group__count">12</span>
+              </li>
+              <li>
+                <label><input type="checkbox" name="availability" value="on-sale"> <span>On sale</span></label>
+                <span class="filter-group__count">8</span>
+              </li>
+            </ul>
+          </fieldset>
+
+        </form>
+      </aside>
+
+      <!-- ---------- KHU VỰC SẢN PHẨM ---------- -->
+      <section class="products" aria-labelledby="results-heading">
+
+        <!-- Thanh trên: số kết quả + sắp xếp -->
+        <div class="products__toolbar">
+          <p id="results-heading" class="products__count">Showing 6 of 42 laptops</p>
+          <div class="products__sort">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select" name="sort">
+              <option value="featured" selected>Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating">Top rated</option>
+              <option value="newest">Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Các filter đang áp dụng -->
+        <ul class="active-filters" aria-label="Active filters">
+          <li>
+            <button type="button" class="chip" data-filter="memory:16gb">
+              16GB RAM <span aria-hidden="true">×</span>
+              <span class="visually-hidden">Remove filter</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="chip" data-filter="availability:in-stock">
+              In stock <span aria-hidden="true">×</span>
+              <span class="visually-hidden">Remove filter</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="active-filters__clear">Clear all</button>
+          </li>
+        </ul>
+
+        <!-- Lưới sản phẩm -->
+        <div class="product-grid">
+
+          <!-- Sản phẩm 1 -->
+          <article class="product-card" data-product-id="1">
+            <div class="product-card__top">
+              <span class="product-card__badge">Bestseller</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add MacBook Air 13″ to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=1" class="product-card__media">
+              <img src="images/mac.jpg" alt="MacBook Air 13″">
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=1">MacBook Air 13″</a></h3>
+            <p class="product-card__specs">M4 · 16GB RAM · 256GB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.9 <span class="product-card__reviews">(128)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$1,199.00</span>
+              <del class="price-old">$1,299.00</del>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+          <!-- Sản phẩm 2 -->
+          <article class="product-card" data-product-id="2">
+            <div class="product-card__top">
+              <span class="product-card__badge">Save $100</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add Dell XPS 13 to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=2" class="product-card__media">
+              <img src="images/dell.jpg" alt="Dell XPS 13">
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=2">Dell XPS 13</a></h3>
+            <p class="product-card__specs">Core Ultra 7 · 16GB · 512GB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.8 <span class="product-card__reviews">(86)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$1,399.00</span>
+              <del class="price-old">$1,499.00</del>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+          <!-- Sản phẩm 3 -->
+          <article class="product-card" data-product-id="3">
+            <div class="product-card__top">
+              <span class="product-card__badge">OLED display</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add ASUS Zenbook 14 OLED to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=3" class="product-card__media">
+              <img src="images/asus.jpg" alt="ASUS Zenbook 14 OLED">
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=3">ASUS Zenbook 14 OLED</a></h3>
+            <p class="product-card__specs">Core 5 · 16GB · 512GB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.8 <span class="product-card__reviews">(94)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$999.00</span>
+              <del class="price-old">$1,099.00</del>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+          <!-- Sản phẩm 4 -->
+          <article class="product-card" data-product-id="4">
+            <div class="product-card__top">
+              <span class="product-card__badge">2-in-1</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add Lenovo Yoga 7 14″ to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=4" class="product-card__media">
+              <img src="images/lenovo.jpg" alt="Lenovo Yoga 7 14″">
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=4">Lenovo Yoga 7 14″</a></h3>
+            <p class="product-card__specs">Ryzen 7 · 16GB · 512GB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.7 <span class="product-card__reviews">(62)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$899.00</span>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+          <!-- Sản phẩm 5 -->
+          <article class="product-card" data-product-id="5">
+            <div class="product-card__top">
+              <span class="product-card__badge">Premium pick</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add HP Spectre x360 14″ to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=5" class="product-card__media">
+              <img src="images/hp.jpg" alt="HP Spectre x360 14″">
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=5">HP Spectre x360 14″</a></h3>
+            <p class="product-card__specs">Core Ultra 7 · 16GB · 1TB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.8 <span class="product-card__reviews">(73)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$1,499.00</span>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+          <!-- Sản phẩm 6 -->
+          <article class="product-card" data-product-id="6">
+            <div class="product-card__top">
+              <span class="product-card__badge">Lightweight</span>
+              <button type="button" class="product-card__wishlist" aria-label="Add Samsung Galaxy Book4 to wishlist"></button>
+            </div>
+            <a href="product-detail.html?id=6" class="product-card__media">
+              <video src="images/tuathoanganh.mp4" alt="Samsung Galaxy Book4" controls></video>
+            </a>
+            <h3 class="product-card__name"><a href="product-detail.html?id=6">Samsung Galaxy Book4</a></h3>
+            <p class="product-card__specs">Core 7 · 16GB · 512GB SSD</p>
+            <p class="product-card__rating"><span aria-hidden="true">★</span> 4.6 <span class="product-card__reviews">(48)</span></p>
+            <p class="product-card__price">
+              <span class="price-current">$1,099.00</span>
+            </p>
+            <button type="button" class="btn btn--primary product-card__add">
+              <span aria-hidden="true">+</span> Add to cart
+            </button>
+          </article>
+
+        </div>
+
+        <!-- Phân trang -->
+        <nav class="pagination" aria-label="Pagination">
+          <ul>
+            <li><a href="#" class="pagination__link pagination__link--prev" aria-label="Previous page">‹</a></li>
+            <li><a href="#" class="pagination__link pagination__link--active" aria-current="page">1</a></li>
+            <li><a href="#" class="pagination__link">2</a></li>
+            <li><a href="#" class="pagination__link">3</a></li>
+            <li><span class="pagination__ellipsis">…</span></li>
+            <li><a href="#" class="pagination__link">7</a></li>
+            <li><a href="#" class="pagination__link pagination__link--next" aria-label="Next page">›</a></li>
+          </ul>
+        </nav>
+        <p class="pagination__summary">Showing 1–6 of 42 laptops</p>
+
+      </section>
+    </div>
+
+    <!-- ========== GUIDE ========== -->
+    <section class="guide" aria-labelledby="guide-title">
+      <h2 id="guide-title" class="guide__title">A little guidance goes a long way.</h2>
+      <p class="guide__text">Start with your everyday: 16GB memory for multitasking, a lightweight build for your commute, and a screen you'll love looking at. We make the details easy to compare.</p>
+      <a href="buying-guide.html" class="guide__link">Explore our laptop buying guide →</a>
+    </section>
+
+  </main>
+
+</body>
+</html>
