@@ -17,77 +17,77 @@
     {
       name: 'MacBook Air 13"', brand: 'Apple', ram: '16GB', storage: '256GB', size: '13-14',
       spec: 'M3 · 16GB RAM · 256GB SSD', tag: 'Bestseller', rating: 4.9, reviews: 128, stock: 10,
-      listPrice: 29990000, salePrice: 27990000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpZ0rcQiPYfDNAbj6898YbDpYmLHJ1lAkLcFQIx8GZQA&s=10'
+      listPrice: 29990000, salePrice: 27990000, img: 'https://ttcenter.com.vn/uploads/product/qpyjh8ry-2549-macbook-air-m5-13-inch-2026-10cpu-8gpu-16gb-512gb-new.jpg'
     },
     {
       name: 'MacBook Pro 14"', brand: 'Apple', ram: '18GB', storage: '512GB', size: '13-14',
       spec: 'M3 Pro · 18GB RAM · 512GB SSD', tag: 'Pro', rating: 4.9, reviews: 86, stock: 5,
-      listPrice: 49990000, salePrice: 45990000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhMi1abcp_teutiR5GrAYiyTgRkMUzAsSyihodI_DZZQ&s=10'
+      listPrice: 49990000, salePrice: 45990000, img: 'https://ttcenter.com.vn/uploads/product/5kqgin1j-1887-macbook-pro-14inch-m2-pro-16gb-1tb-like-new.jpg'
     },
     {
       name: 'MacBook Pro 16"', brand: 'Apple', ram: '36GB', storage: '1TB', size: '17+',
       spec: 'M3 Max · 36GB RAM · 1TB SSD', tag: 'Max', rating: 5, reviews: 42, stock: 3,
-      listPrice: 79990000, salePrice: 74990000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDSfzdKIjH74a3UJ7iRW_OFt-Uux2JX_MsNMThLXtlA&s=10'
+      listPrice: 79990000, salePrice: 74990000, img: 'https://ttcenter.com.vn/uploads/product/16lhm5au-505-macbook-pro-16inch-m2-pro-16gb-512gb.jpg'
     },
 
     // ---------- Dell ----------
     {
       name: 'Dell XPS 13', brand: 'Dell', ram: '16GB', storage: '512GB', size: '13-14',
       spec: 'Core Ultra 7 · 16GB · 512GB SSD', tag: 'Save $100', rating: 4.8, reviews: 86, stock: 8,
-      listPrice: 35990000, salePrice: 32990000, img: 'images/dell.jpg'
+      listPrice: 35990000, salePrice: 32990000, img: 'https://ttcenter.com.vn/uploads/product/g6fcd9op-3421-dell-xps-13-dx13260-2026-core-5-320-8gb-512gb-13-4-2-5k-touch-new.jpg'
     },
     {
       name: 'Dell XPS 15', brand: 'Dell', ram: '32GB', storage: '1TB', size: '15-16',
       spec: 'Core Ultra 9 · 32GB · 1TB SSD', tag: 'OLED', rating: 4.8, reviews: 54, stock: 4,
-      listPrice: 55990000, salePrice: 51990000, img: 'images/dell.jpg'
+      listPrice: 55990000, salePrice: 51990000, img: 'https://ttcenter.com.vn/uploads/product/brwxajm6-809-dell-xps-15-9530-core-i7-13700h-ram-16gb-ssd-512gb-intel-arc-a370m-4gb-15-6-fhd-new.jpeg'
     },
 
     // ---------- ASUS ----------
     {
       name: 'ASUS Zenbook 14 OLED', brand: 'ASUS', ram: '16GB', storage: '512GB', size: '13-14',
       spec: 'Core Ultra 5 · 16GB · 512GB SSD', tag: 'OLED display', rating: 4.8, reviews: 94, stock: 6,
-      listPrice: 24990000, salePrice: 22990000, img: 'images/asus.jpg'
+      listPrice: 24990000, salePrice: 22990000, img: 'https://ttcenter.com.vn/uploads/product/iixmc2wj-1909-asus-zenbook-14-oled-ux3405-2025-ultra-9-285h-ram-32gb-ssd-1tb-14-3k-oled-120hz-new.jpg'
     },
     {
       name: 'ASUS ROG Zephyrus G14', brand: 'ASUS', ram: '32GB', storage: '1TB', size: '13-14',
       spec: 'Ryzen 9 · 32GB · 1TB SSD · RTX 4070', tag: 'Gaming', rating: 4.9, reviews: 67, stock: 5,
-      listPrice: 42990000, salePrice: 39990000, img: 'images/asus.jpg'
+      listPrice: 42990000, salePrice: 39990000, img: 'https://ttcenter.com.vn/uploads/product/6stqjd69-1267-asus-rog-zephyrus-g14-ga402xv-ryzen-9-7940hs-16gb-512gb-rtx-4060-14-2k-ips-165hz-new.jpg'
     },
 
     // ---------- Lenovo ----------
     {
       name: 'Lenovo Yoga 7 14"', brand: 'Lenovo', ram: '16GB', storage: '512GB', size: '13-14',
       spec: 'Ryzen 7 · 16GB · 512GB SSD', tag: '2-in-1', rating: 4.7, reviews: 62, stock: 7,
-      listPrice: 21990000, salePrice: null, img: 'images/lenovo.jpg'
+      listPrice: 21990000, salePrice: null, img: 'https://ttcenter.com.vn/uploads/product/7ze5katp-2442-lenovo-yoga-7-2-in-1-14iml9-core-ultra-7-155h-32gb-1tb-intel-arc-14-inch-2-8k-wqxga-120hz-new.jpg'
     },
     {
       name: 'Lenovo ThinkPad X1 Carbon', brand: 'Lenovo', ram: '32GB', storage: '1TB', size: '13-14',
       spec: 'Core Ultra 7 · 32GB · 1TB SSD', tag: 'Business', rating: 4.8, reviews: 41, stock: 6,
-      listPrice: 48990000, salePrice: 44990000, img: 'images/lenovo.jpg'
+      listPrice: 48990000, salePrice: 44990000, img: 'https://ttcenter.com.vn/uploads/product/tcdn1i72-2519-lenovo-thinkpad-x1-carbon-gen-13-aura-edition-21ns010jvn-intel-core-ultra-7-258v-32gb-1tb-intel-arc-graphics-14-2-8k-ole.jpg'
     },
 
     // ---------- HP ----------
     {
       name: 'HP Spectre x360 14"', brand: 'HP', ram: '16GB', storage: '1TB', size: '13-14',
       spec: 'Core Ultra 7 · 16GB · 1TB SSD', tag: 'Premium pick', rating: 4.8, reviews: 73, stock: 5,
-      listPrice: 37990000, salePrice: null, img: 'images/hp.jpg'
+      listPrice: 37990000, salePrice: null, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgisDdBLcu8NdOhpCP7nXFbPNOkUjooZq1qaF9eafykw&s=10'
     },
     {
       name: 'HP Pavilion 15', brand: 'HP', ram: '16GB', storage: '512GB', size: '15-16',
       spec: 'Core 5 · 16GB · 512GB SSD', tag: 'Value', rating: 4.6, reviews: 89, stock: 10,
-      listPrice: 17990000, salePrice: 15990000, img: 'images/hp.jpg'
+      listPrice: 17990000, salePrice: 15990000, img: 'https://ttcenter.com.vn/uploads/product/wo9qhlzc-3244-hp-pavilion-15-cs3014tu-core-i5-1035g1-8gb-256gb-likenew.jpg'
     },
 
     // ---------- Samsung ----------
     {
       name: 'Samsung Galaxy Book4 Pro', brand: 'Samsung', ram: '16GB', storage: '512GB', size: '13-14',
       spec: 'Core Ultra 7 · 16GB · 512GB SSD', tag: 'Lightweight', rating: 4.6, reviews: 48, stock: 8,
-      listPrice: 27990000, salePrice: 25990000, img: 'images/samsung.jpg'
+      listPrice: 27990000, salePrice: 25990000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQNz3e2Uh9Zu-NpD_yq_l2pZGYs44_8aqZbBgzoxwow&s=10'
     },
     {
       name: 'Samsung Galaxy Book4 Ultra', brand: 'Samsung', ram: '32GB', storage: '1TB', size: '15-16',
       spec: 'Core Ultra 9 · 32GB · 1TB SSD · RTX 4070', tag: 'Creator', rating: 4.8, reviews: 29, stock: 3,
-      listPrice: 59990000, salePrice: 54990000, img: 'images/samsung.jpg'
+      listPrice: 59990000, salePrice: 54990000, img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2u9fyX9V83WMDoL90k0sv9NIe7zCscvtFHc8kpITj6A&s=10'
     }
   ];
 
