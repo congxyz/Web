@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TECHZONE – AI Shopping Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/Frontend/Css/Assistant.css" />
+  <script src="/Frontend/Js/Pages/Assistant.js" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            Promise.all([
+                loadComponent(
+                    "#header",
+                    "Pages/Components/Header.html"
+                ),
+                loadComponent(
+                    "#aifloating",
+                    "Pages/Components/AIFloating.html"
+                )
+            ]).then(function() {
+                const script = document.createElement("script");
+                script.src = "Js/Components/Header.js";
+                document.body.appendChild(script);;
+            })
+        });
+    </script>
+</head>
+<body>
+
+  
+<div class="page">
+
+  <!-- ============ HEADER ============ -->
+  <header>
+    
+    <div id="header"> </div>
+    <div id="aifloating"> </div>
+</header>
+
+  <!-- ============ WORKSPACE ============ -->
+  <div class="workspace">
+
+    <!-- Conversation sidebar -->
+    <aside class="sidebar">
+      <button class="new-chat" id="newChat">
+        <i class="ico" data-lucide="plus" style="width:18px;height:18px;color:#2878D0"></i>
+        <span>New conversation</span>
+      </button>
+
+      <div class="saved">
+        <div class="eyebrow-grey">YOUR CONVERSATIONS</div>
+        <button class="convo active" data-convo="0">
+          <span class="convo-title">My everyday tech upgrade</span>
+          <span class="convo-meta">Today · Laptops &amp; phones</span>
+        </button>
+        <button class="convo plain" data-convo="1">A phone for travel photos</button>
+        <button class="convo plain" data-convo="2">Comparing OLED laptops</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="principles">
+        <i class="ico" data-lucide="shield-check" style="width:20px;height:20px;color:#2878D0"></i>
+        <div class="principles-title">Advice, not a sales pitch.</div>
+        <p class="principles-text">We'll explain our thinking, flag trade-offs, and help you decide at your pace.</p>
+      </div>
+    </aside>
+
+    <!-- Conversation -->
+    <main class="conversation">
+
+      <div class="intro">
+        <div class="identity">
+          <h1>Your next upgrade, figured out.</h1>
+          <div class="availability"><span class="dot"></span>TECHZONE AI · Your personal tech advisor</div>
+        </div>
+        <button class="icon-btn" aria-label="More"><i class="ico" data-lucide="ellipsis" style="color:#64748B"></i></button>
+      </div>
+
+      <div class="topics">
+        <button class="option option-active">Laptop for creative work</button>
+        <button class="option option-active">Phone for photos</button>
+      </div>
+
+      <div id="thread" class="thread">
+        <div class="msg msg-user">
+          <div class="bubble">
+            <div class="label">YOU</div>
+            <p>I need a light laptop for Figma, lots of browser tabs, and occasional Lightroom. Budget is $1,300. I'm also replacing my phone — under $1,000, with a great camera and reliable battery.</p>
+          </div>
+        </div>
+
+        <div class="msg msg-ai">
+          <div class="avatar"><i class="ico" data-lucide="sparkles" style="width:16px;height:16px"></i></div>
+          <div class="bubble">
+            <div class="label grey">TECHZONE AI</div>
+            <p>Happy to help with both. A few details: do you prefer macOS or Windows? Will 256GB work, or do you keep large photo libraries locally? For the phone, do you prefer iOS or Android, and a compact or larger screen? Any gaming or specialist apps?</p>
+          </div>
+        </div>
+
+        <div class="msg msg-user">
+          <div class="bubble">
+            <div class="label">YOU</div>
+            <p>I already use a Mac and iPhone, so I'd like to stay with Apple if it makes sense. I use cloud storage, no gaming. A 13–14 inch laptop and a compact phone are ideal. I carry both every day.</p>
+          </div>
+        </div>
+
+        <div class="msg msg-ai">
+          <div class="avatar"><i class="ico" data-lucide="sparkles" style="width:16px;height:16px"></i></div>
+          <div class="bubble">
+            <div class="label grey">TECHZONE AI</div>
+            <p>That points to a lightweight Mac with 16GB memory and a compact Pro iPhone. Your cloud workflow makes 256GB reasonable. Here's my first choice and a Windows alternative if you'd rather save $200.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop recommendations -->
+      <section class="recs">
+        <div class="rec-title">
+          <h2>Two laptops worth your shortlist</h2>
+          <span class="status-green">Within your budget</span>
+        </div>
+
+        <div class="rec-cards">
+          <!-- MacBook -->
+          <article class="rec-card featured">
+            <span class="tag">Best fit for you</span>
+            <div class="photo">
+              <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" aria-label="MacBook Air 13 inch">
+                <defs>
+                  <linearGradient id="mbScreen" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#9fd0ff"/><stop offset=".5" stop-color="#2f7be0"/><stop offset="1" stop-color="#cfe6ff"/>
+                  </linearGradient>
+                  <linearGradient id="mbBody" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#2b3a52"/><stop offset="1" stop-color="#1c2638"/>
+                  </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="136" rx="130" ry="7" fill="#000" opacity=".08"/>
+                <polygon points="150,22 262,14 275,104 138,108" fill="#10151f"/>
+                <polygon points="156,27 258,20 269,99 145,103" fill="url(#mbScreen)"/>
+                <rect x="196" y="14" width="24" height="5" rx="2.5" fill="#10151f" transform="rotate(-4 208 16)"/>
+                <polygon points="106,122 138,106 276,102 312,120 300,130 118,132" fill="url(#mbBody)"/>
+                <polygon points="136,114 276,110 289,119 124,121" fill="#0f1623" opacity=".7"/>
+              </svg>
+            </div>
+            <h3>MacBook Air 13"</h3>
+            <div class="specs">M4 · 16GB RAM · 256GB SSD</div>
+            <div class="price">$1,199.00</div>
+            <ul class="checks">
+              <li><i class="ico" data-lucide="check"></i>1.24 kg for your everyday carry</li>
+              <li><i class="ico" data-lucide="check"></i>16GB handles Figma + busy browser tabs</li>
+              <li><i class="ico" data-lucide="check"></i>Seamless with your existing iPhone</li>
+            </ul>
+            <p class="tradeoff">Trade-off: 256GB fills up fast with local RAW files; two USB-C ports may mean a hub.</p>
+            <button class="btn btn-primary add-cart" data-name="MacBook Air 13&quot;">Add to cart</button>
+            <a class="compare-link" href="#compare">Compare details <i class="ico" data-lucide="arrow-up-right"></i></a>
+          </article>
+
+          <!-- Zenbook -->
+          <article class="rec-card">
+            <span class="tag">Best value alternative</span>
+            <div class="photo">
+              <svg viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet" aria-label="ASUS Zenbook 14 OLED">
+                <defs>
+                  <linearGradient id="zbScreen" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#2e86ff"/><stop offset=".45" stop-color="#7fc0ff"/><stop offset=".7" stop-color="#ff7a59"/><stop offset="1" stop-color="#2352c9"/>
+                  </linearGradient>
+                  <linearGradient id="zbBody" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#9bb3c9"/><stop offset="1" stop-color="#6f8aa5"/>
+                  </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="136" rx="135" ry="7" fill="#000" opacity=".08"/>
+                <polygon points="146,20 262,12 276,104 134,110" fill="#1b2433"/>
+                <polygon points="151,25 257,18 270,99 141,105" fill="url(#zbScreen)"/>
+                <polygon points="100,124 134,108 278,102 316,121 302,131 114,133" fill="url(#zbBody)"/>
+                <polygon points="134,115 276,110 290,119 122,122" fill="#4c6178" opacity=".6"/>
+              </svg>
+            </div>
+            <h3>ASUS Zenbook 14 OLED</h3>
+            <div class="specs">Core Ultra 5 · 16GB · 512GB SSD</div>
+            <div class="price">$999.00</div>
+            <ul class="checks">
+              <li><i class="ico" data-lucide="check"></i>Vivid 14" OLED for creative work</li>
+              <li><i class="ico" data-lucide="check"></i>16GB memory for multitasking</li>
+              <li><i class="ico" data-lucide="check"></i>Saves $200 for accessories or storage</li>
+            </ul>
+            <p class="tradeoff">Trade-off: Windows is a workflow change. OLED can use more battery with bright content.</p>
+            <button class="btn btn-outline view-product" data-name="ASUS Zenbook 14 OLED">View product</button>
+            <a class="compare-link" href="#compare">Compare details <i class="ico" data-lucide="arrow-up-right"></i></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Comparison -->
+      <section class="comparison" id="compare">
+        <h3>The practical difference</h3>
+        <div class="cmp-row head"><span></span><span>MacBook Air</span><span>Zenbook 14</span></div>
+        <div class="cmp-row"><span>Your workflow</span><span>Keep macOS</span><span>Switch to Windows</span></div>
+        <div class="cmp-row"><span>Display</span><span>13.6" Retina</span><span>14" OLED</span></div>
+        <div class="cmp-row"><span>Carry weight</span><span>1.24 kg</span><span>1.28 kg</span></div>
+        <div class="cmp-row"><span>Price</span><span>$1,199</span><span>$999</span></div>
+      </section>
+
+      <!-- Phone -->
+      <section class="phone-rec">
+        <h3>And for your pocket: iPhone 16 Pro.</h3>
+        <div class="phone-match">
+          <div class="phone-photo">
+            <svg viewBox="0 0 125 125" aria-label="iPhone 16 Pro">
+              <defs>
+                <linearGradient id="phFront" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#c85a14"/></linearGradient>
+                <linearGradient id="phBack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9bfb2"/><stop offset="1" stop-color="#9a8f80"/></linearGradient>
+              </defs>
+              <ellipse cx="62" cy="112" rx="38" ry="4" fill="#000" opacity=".1"/>
+              <g transform="rotate(-5 45 62)"><rect x="24" y="22" width="36" height="78" rx="7" fill="#7a5a3a"/><rect x="26.5" y="24.5" width="31" height="73" rx="5" fill="url(#phFront)"/><rect x="36" y="27" width="12" height="3.5" rx="1.7" fill="#111"/></g>
+              <g transform="rotate(4 82 62)"><rect x="64" y="20" width="36" height="80" rx="7" fill="url(#phBack)"/><rect x="68" y="24" width="18" height="18" rx="5" fill="#8d8173"/><circle cx="73" cy="29" r="3.2" fill="#222"/><circle cx="81" cy="29" r="3.2" fill="#222"/><circle cx="77" cy="37" r="3.2" fill="#222"/></g>
+            </svg>
+          </div>
+          <div class="phone-reasoning">
+            <div class="phone-name">256GB · Desert Titanium · $999</div>
+            <p>A manageable 6.3" screen, excellent photo and video tools, and easy continuity with your Mac. It's right at your budget limit.</p>
+            <p class="small">Prefer Android? Galaxy S25 is $799 with a smaller 6.2" screen. You'd save $200 but lose Apple continuity.</p>
+          </div>
+        </div>
+        <div class="phone-actions">
+          <button class="btn btn-outline view-product" data-name="iPhone 16 Pro">View iPhone 16 Pro</button>
+          <button class="btn btn-primary add-cart" data-name="iPhone 16 Pro">Add iPhone to cart</button>
+        </div>
+      </section>
+
+      <p class="summary-line">Your Apple pair: $2,198 before tax. Both are in stock with free shipping. Want to compare cameras or check whether your apps need more storage?</p>
+
+      <div class="followups">
+        <button class="option option-plain" data-q="Compare cameras">Compare cameras</button>
+        <button class="option option-plain" data-q="Is 256GB enough?">Is 256GB enough?</button>
+        <button class="option option-plain" data-q="Show the lighter option">Show the lighter option</button>
+      </div>
+
+      <div class="composer">
+        <form class="message-input" id="chatForm" autocomplete="off">
+          <i class="ico" data-lucide="plus" style="width:18px;height:18px;color:#64748B"></i>
+          <input id="chatInput" type="text" placeholder="Ask a question or refine your recommendations..." />
+          <button class="send" type="submit" aria-label="Send"><i class="ico" data-lucide="arrow-up" style="width:19px;height:19px"></i></button>
+        </form>
+        <div class="disclaimer">AI can make mistakes. Confirm specifications and compatibility before buying.</div>
+      </div>
+    </main>
+
+    <!-- Shopping preferences -->
+    <aside class="preferences">
+      <h4>What matters to you</h4>
+      <div class="pref"><div class="eyebrow">YOUR BUDGET</div><p>Laptop ≤ $1,300<br>Phone ≤ $1,000</p></div>
+      <div class="pref"><div class="eyebrow">YOUR EVERYDAY</div><p>Figma, browsing, Lightroom<br>Photos &amp; everyday use</p></div>
+      <div class="pref"><div class="eyebrow">YOUR PREFERENCES</div><p>macOS + iOS<br>Compact &amp; lightweight</p></div>
+      <div class="pref"><div class="eyebrow">PRACTICAL DETAILS</div><p>Cloud storage · 256GB<br>No gaming · Daily carry</p></div>
+      <div class="divider"></div>
+      <p class="pref-note">Updated from this conversation. Tell me anytime if your needs change.</p>
+    </aside>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="store-footer">
+    <span>© 2026 TECHZONE · Thoughtfully chosen technology.</span>
+    <span>Help · Shipping &amp; returns · Privacy · Terms</span>
+  </footer>
+
+  <!-- Floating assistant -->
+  <button class="fab" id="fab">
+    <i class="ico" data-lucide="sparkles" style="width:18px;height:18px"></i>
+    <span>Ask TECHZONE AI</span>
+  </button>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
