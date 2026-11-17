@@ -38,7 +38,7 @@
     {
       name: 'iPhone 18 Pro', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Băng thanh · 6,3"', rating: 4.9, reviews: 7341, stock: 5,
-      listPrice: 38999000, salePrice: 38990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01.jpg'
+      listPrice: 38999000, salePrice: 38990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:300:300/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01.jpg'
     },
     {
       name: 'iPhone 18 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
