@@ -448,3 +448,63 @@ button.page:disabled:hover { border-color: var(--border); color: var(--text-2); 
   .footer__inner { flex-direction: column; gap: 10px; }
 }
 
+
+
+.stepper {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  list-style: none;
+  gap: 0;
+  margin: 24px 0;
+}
+
+.stepper__step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #8a94a6;           /* muted */
+  font-size: 13px;
+}
+
+/* Đường nối giữa các bước */
+.stepper__step + .stepper__step::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #e5e7eb;
+  margin: 0 12px;
+}
+
+.stepper__number {
+  width: 28px; height: 28px;
+  border-radius: 50%;
+  border: 2px solid #e5e7eb;
+  display: grid; place-items: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/* Bước hiện tại */
+.stepper__step.active {
+  color: #2b6fd6;
+}
+.stepper__step.active .stepper__number {
+  background: #2b6fd6;
+  border-color: #2b6fd6;
+  color: #fff;
+}
+
+/* Bước đã hoàn thành */
+.stepper__step.done {
+  color: #2b6fd6;
+}
+.stepper__step.done .stepper__number {
+  background: #2b6fd6;
+  border-color: #2b6fd6;
+  color: #fff;
+}
+.stepper__step.done + .stepper__step::before {
+  background: #2b6fd6;      /* đường nối cũng đổi màu */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart | CTTSHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/your-cart.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="/Frontend/Js/Components/Header.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script src="/Frontend/Js/Components/Components.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Promise.all([
+        loadComponent(
+          "#header",
+          "/Frontend/Pages/Components/Header.html"
+        ),
+        loadComponent(
+          "#aifloating",
+          "/Frontend/Pages/Components/AIFloating.html"
+        )
+      ]).then(function () {
+        const script = document.createElement("script");
+        script.src = "/Frontend/Js/Pages/your-cart.js";
+        document.body.appendChild(script);
+        const script1 = document.createElement("script");
+        script1.src = "/Frontend/Js/Components/Header.js";
+        document.body.appendChild(script1);
+      })
+    });
+  </script>
+  </script>
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div id="header"> </div>
+    <div id="aifloating"> </div>
+  </header> 
+  
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb"><a href="../index.html">Trang chủ</a> / <span>Giỏ hàng</span></div>
+
+     <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero__title">Nâng tầm trải nghiệm với những lựa chọn mới.  </h1>
+      <p class="hero__desc"></p>Giỏ hàng của bạn · 
+      <span id="cart-count">1</span> sản phẩm được lựa chọn kỹ lưỡng. </p>
+    </section>
+
+   <!-- quá trình đặt hàng-->
+    <section>
+    <ol class="stepper">
+      <li class="stepper__step active"> 
+        <span class="stepper__number">1</span>
+        <span class="stepper__label"><b>Giỏ hàng</b></span>
+      </li>
+      <li class="stepper__step"> 
+        <span class="stepper__number">2</span>
+        <span class="stepper__label"><b>Thanh toán</b></span>
+      </li>
+      <li class="stepper__step"> 
+        <span class="stepper__number">3</span>
+        <span class="stepper__label"><b>Hoàn tất</b></span>
+      </li>
+</section>
+
+<!-- Bố cục giỏ hàng -->
+    <div class="cart-layout">
+
+        <!-- Giỏ hàng   -->
+         <div class="cart">
+            <div class="free-shipping-banner">
+              <i data-lucide="truck"></i>
+              <span>Đơn hàng của bạn được miễn phí vận chuyển.</span>
+            </div>
+
+            <!-- Danh sách sản phẩm trong giỏ -->
+            <div class="cart-items" id="cartItems">
+              <!-- JS sẽ render từng cart-item vào đây -->
+            </div>
+
+            <!-- Promo code -->
+            <div class="promo-code">
+              <i data-lucide="ticket-percent"></i>
+              <input type="text" placeholder="Nhập mã giảm giá" />
+              <button class="btn btn--primary">Áp dụng</button>
+            </div>
+
+            <!-- Tiếp tục mua sắm -->
+             <div>
+            <a href="../index.html" class="continue-link">
+              <i data-lucide="arrow-left"></i>
+              <span>Tiếp tục mua sắm</span>
+            </a>
+            </div>
+
+          </div> <!-- /.cart -->
+
+          <!-- Khái quát đơn hàng (cột phải) -->
+          <div class="cart-summary">
+
+
+      <!-- banner AI-->
+        <section class="ai-banner">
+      <div class="ai-banner__left">
+        <span class="ai-banner__icon">
+          <i data-lucide="sparkles"></i>
+        </span>
+        <div>
+          <h3>Kết nối liền mạch, trải nghiệm trọn vẹn.</h3>
+          <p>Cần hỗ trợ lựa chọn hoặc kiểm tra đơn hàng? Hãy để chuyên gia AI đồng hành cùng bạn.</p>
+        </div>
+      </div>
+      <button class="btn btn--white">
+        <i data-lucide="arrow-right"></i>
+        Tư vấn cùng AI
+      </button>
+    </section>
+          </div> <!-- /.cart-summary -->
+    </div> <!-- /.cart-layout -->
+</main>
+
+ <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 CTTSHOP · Công nghệ được chọn lọc kỹ lưỡng.</span>
+      <ul>
+        <li><a href="#">Trợ giúp</a></li>
+        <li><a href="#">Vận chuyển &amp; đổi trả</a></li>
+        <li><a href="#">Quyền riêng tư</a></li>
+        <li><a href="#">Điều khoản</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
