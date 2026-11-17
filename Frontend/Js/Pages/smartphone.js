@@ -18,7 +18,7 @@
     {
       name: 'iPhone 17', brand: 'Apple', os: 'iOS', tag: 'Phổ biến', storages: ['256GB', '512GB'],
       spec: '256GB · Tím oải hương · 6,3"', rating: 4.9, reviews: 67593, stock: 10,
-      listPrice: 28999000, salePrice: 28490000, img: 'https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTz6thItN8Ye_Yx3m1eu01q6X8wyFKPqLMtbB4-fPB4FAxj8nUIZ1hQq8kkITpo9hxlB-IGbDOpSgUs4mXZ8qfh9iPW9AWXk8eDfLXjFv1bywN8uyL9RJ8l-hjoKOvembETE5zsCV8&usqp=CAc'
+      listPrice: 28999000, salePrice: 28490000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:300:300/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone_17_256gb-3_2.jpg'
     },
     {
       name: 'iPhone 17 Pro', brand: 'Apple', os: 'iOS', tag: 'Camera Pro', storages: ['256GB', '512GB', '1TB'],
@@ -38,7 +38,7 @@
     {
       name: 'iPhone 18 Pro', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
       spec: '256GB · Băng thanh · 6,3"', rating: 4.9, reviews: 7341, stock: 5,
-      listPrice: 38999000, salePrice: 38990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01.jpg'
+      listPrice: 38999000, salePrice: 38990000, img: 'https://cdn2.cellphones.com.vn/insecure/rs:fill:300:300/q:100/plain/https://cellphones.com.vn/media/catalog/product/i/p/iphone-18-pro-01.jpg'
     },
     {
       name: 'iPhone 18 Pro Max', brand: 'Apple', os: 'iOS', tag: 'Mới', storages: ['256GB', '512GB', '1TB', '2TB'],
