@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi tiết sản phẩm | CTTSHOP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/productdetail.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => { lucide.createIcons(); });
+  </script>
+  <script src="/Frontend/Js/Components/Components.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      Promise.all([
+        loadComponent(
+          "#header",
+          "/Frontend/Pages/Components/Header.html"
+        ),
+        loadComponent(
+          "#aifloating",
+          "/Frontend/Pages/Components/AIFloating.html"
+        )
+      ]).then(function () {
+        // Header.js chạy trước để productdetail.js có thể đánh dấu mục menu đúng danh mục
+        const script1 = document.createElement("script");
+        script1.src = "/Frontend/Js/Components/Header.js";
+        script1.onload = function () {
+          const script = document.createElement("script");
+          script.src = "/Frontend/Js/Pages/productdetail.js";
+          document.body.appendChild(script);
+        };
+        document.body.appendChild(script1);
+      })
+    });
+  </script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div id="header"> </div>
+    <div id="aifloating"> </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb" id="pdBreadcrumb"><a href="../index.html">Trang chủ</a></div>
+
+    <!-- Không tìm thấy sản phẩm -->
+    <section class="pd-notfound" id="pdNotFound" hidden>
+      <i data-lucide="package-search"></i>
+      <h1>Không tìm thấy sản phẩm</h1>
+      <p>Sản phẩm bạn tìm có thể đã ngừng kinh doanh hoặc đường dẫn không đúng.</p>
+      <div class="pd-notfound__actions">
+        <a class="btn btn--primary" href="/Frontend/Pages/smartphone.html">Xem điện thoại</a>
+        <a class="btn btn--white" href="/Frontend/Pages/laptop.html">Xem laptop</a>
+      </div>
+    </section>
+
+    <div id="pdContent" hidden>
+
+      <!-- Khu vực mua hàng -->
+      <section class="pd-top">
+
+        <!-- Thư viện ảnh -->
+        <div class="pd-gallery">
+          <div class="pd-main">
+            <div class="pd-main__meta">
+              <span class="badge" id="pdBadge"></span>
+              <button type="button" class="pd-icon-btn" id="pdShare" aria-label="Sao chép liên kết">
+                <i data-lucide="share-2"></i>
+              </button>
+            </div>
+            <div class="pd-main__img" id="pdMainWrap">
+              <img id="pdMainImg" src="" alt="" />
+            </div>
+            <p class="pd-hint">Di chuột lên ảnh để phóng to</p>
+          </div>
+
+          <div class="pd-thumbs" id="pdThumbs"></div>
+
+          <a class="pd-assist" href="/Frontend/Pages/Assistant.html">
+            <span class="pd-assist__icon"><i data-lucide="sparkles"></i></span>
+            <div>
+              <h4>Chưa chắc đây là lựa chọn phù hợp?</h4>
+              <p>Hỏi trợ lý AI để so sánh với các mẫu khác theo nhu cầu và ngân sách của bạn.</p>
+              <span class="pd-assist__link">Hỏi trợ lý AI →</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Thông tin & cấu hình -->
+        <div class="pd-info">
+          <div>
+            <p class="pd-brand" id="pdBrand"></p>
+            <h1 class="pd-title" id="pdTitle"></h1>
+            <p class="pd-sub" id="pdSub"></p>
+          </div>
+
+          <div class="pd-rating" id="pdRating"></div>
+
+          <div>
+            <div class="pd-price">
+              <span class="pd-price__now" id="pdPrice"></span>
+              <del class="pd-price__old" id="pdOldPrice"></del>
+              <span class="badge badge--sale" id="pdSaving"></span>
+            </div>
+            <p class="pd-price__note" id="pdPriceNote"></p>
+          </div>
+
+          <div class="pd-divider"></div>
+
+          <!-- Màu sắc -->
+          <div class="pd-option">
+            <h4>Màu sắc: <span id="pdColorName"></span></h4>
+            <div class="pd-swatches" id="pdColors"></div>
+          </div>
+
+          <!-- Dung lượng / Cấu hình -->
+          <div class="pd-option">
+            <h4 id="pdVariantLabel">Dung lượng</h4>
+            <div class="pd-chips" id="pdVariants"></div>
+          </div>
+
+          <!-- Tình trạng & số lượng -->
+          <div class="pd-stock-row">
+            <div class="pd-stock" id="pdStock"></div>
+            <div class="pd-qty" aria-label="Số lượng">
+              <button type="button" id="pdQtyMinus" aria-label="Giảm số lượng">−</button>
+              <span id="pdQty">1</span>
+              <button type="button" id="pdQtyPlus" aria-label="Tăng số lượng">+</button>
+            </div>
+          </div>
+
+          <div class="pd-actions">
+            <button type="button" class="btn btn--primary pd-add" id="pdAdd">
+              <i data-lucide="shopping-bag"></i> Thêm vào giỏ
+            </button>
+            <button type="button" class="pd-wish" id="pdWish" aria-label="Thêm vào yêu thích">
+              <i data-lucide="heart"></i>
+            </button>
+          </div>
+          <button type="button" class="btn btn--white pd-buy" id="pdBuy">Mua ngay</button>
+
+          <!-- Ưu đãi -->
+          <div class="pd-promo">
+            <h4><i data-lucide="gift"></i> Ưu đãi khi mua tại CTTSHOP</h4>
+            <ul id="pdPromo"></ul>
+          </div>
+
+          <!-- Dịch vụ -->
+          <ul class="pd-services">
+            <li>
+              <i data-lucide="truck"></i>
+              <div><strong>Giao hàng miễn phí</strong><span>Nhận hàng nhanh trong 2 giờ tại nội thành</span></div>
+            </li>
+            <li>
+              <i data-lucide="rotate-ccw"></i>
+              <div><strong>Đổi trả trong 30 ngày</strong><span>1 đổi 1 nếu có lỗi từ nhà sản xuất</span></div>
+            </li>
+            <li>
+              <i data-lucide="shield-check"></i>
+              <div><strong>Bảo hành chính hãng 12 tháng</strong><span id="pdWarranty">Tại trung tâm bảo hành của
+                  hãng</span></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Tab thông tin -->
+      <nav class="pd-tabs" role="tablist">
+        <button type="button" class="active" data-tab="specs" role="tab">Thông số kỹ thuật</button>
+        <button type="button" data-tab="reviews" role="tab">Đánh giá</button>
+        <button type="button" data-tab="policy" role="tab">Bảo hành &amp; đổi trả</button>
+      </nav>
+
+      <section class="pd-panel" data-panel="specs">
+        <div class="pd-story">
+          <h3 id="pdStoryTitle"></h3>
+          <p id="pdDesc"></p>
+          <div class="pd-keys" id="pdKeys"></div>
+        </div>
+        <div class="pd-specs" id="pdSpecs"></div>
+      </section>
+
+      <section class="pd-panel" data-panel="reviews" hidden>
+        <div class="pd-review" id="pdReview"></div>
+      </section>
+
+      <section class="pd-panel" data-panel="policy" hidden>
+        <div class="pd-policy">
+          <div>
+            <h4>Bảo hành</h4>
+            <p>Sản phẩm chính hãng, bảo hành 12 tháng tại trung tâm bảo hành ủy quyền của hãng trên toàn quốc. Hỗ trợ
+              kiểm tra, vệ sinh máy miễn phí trọn đời tại cửa hàng CTTSHOP.</p>
+          </div>
+          <div>
+            <h4>Đổi trả</h4>
+            <p>Đổi mới trong 30 ngày nếu sản phẩm có lỗi phần cứng từ nhà sản xuất. Sản phẩm đổi trả cần còn đầy đủ hộp
+              và
+              phụ kiện đi kèm.</p>
+          </div>
+          <div>
+            <h4>Thanh toán</h4>
+            <p>Hỗ trợ thanh toán tiền mặt khi nhận hàng, chuyển khoản, thẻ ATM/Visa/Mastercard và trả góp 0% qua thẻ tín
+              dụng.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sản phẩm liên quan -->
+      <section class="pd-related">
+        <h2>Có thể bạn cũng thích</h2>
+        <div class="grid" id="pdRelated"></div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 CTTSHOP · Công nghệ được chọn lọc kỹ lưỡng. Giá và ưu đãi có thể thay đổi.</span>
+      <ul>
+        <li><a href="#">Trợ giúp</a></li>
+        <li><a href="#">Vận chuyển &amp; đổi trả</a></li>
+        <li><a href="#">Quyền riêng tư</a></li>
+        <li><a href="#">Điều khoản</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Thông báo nhanh -->
+  <div class="pd-toast" id="pdToast" role="status" aria-live="polite"></div>
+</body>
+
+</html>
